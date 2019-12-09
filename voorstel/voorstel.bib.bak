@@ -36,10 +36,10 @@
   year   = {2013},
 }
 
-@Unpublished{Qu2014,
+@Unpublished{Qu2008,
   author = {Xiao Qu and Myra B. Cohen and Katherine M. Woolf},
   title  = {Combinatorial Interaction Regression Testing: A Study of Test Case Generation and Prioritization},
-  year   = {2014},
+  year   = {2008},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
