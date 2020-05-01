@@ -7,20 +7,24 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+%Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
-Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+%Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
+%Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+%\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+%
+%\lipsum[7-20]
 
-\lipsum[7-20]
+In dit hoofdstuk zal de stand van zaken binnen het domein van regressietesten van een chatbot grondig onderzocht worden aan de hand van een literatuurstudie. Er wordt begonnen met een korte algemene beschrijving van een chatbot en zijn onderdelen. In een volgende sectie wordt er gekeken wat de basis is om software te testen, om vervolgens te bekijken hoe deze principes kunnen toegepast worden bij het testen van een chatbot. 
 
-\subsection{Wat is een chatbot?}
+Al deze inleidende informatie leidt tot een grondige basis om het eigenlijke onderwerp te kunnen gaan bestuderen: regressietesten van een chatbot. Eerst wordt regressietesten met zijn basisprincipes en methodologiën besproken. Vervolgens wordt regressietesten in het specifieke geval van een chatbot besproken.
+
+\section{Wat is een chatbot?}
 
 Zoals reeds beschreven in de inleiding van deze paper zal dit onderzoek zich richten op het regressie testen van chatbots. Om een chatbot te kunnen testen moet men natuurlijk eerst weten wat een chatbot is en waaruit deze bestaat. Er zijn verschillende definities te vinden voor wat een chatbot nu juist is. De definitie van \textcite{AbuShawar2015} is één van de eenvoudigste. Volgens haar is een chatbot een gespreksagent die interactie aangaat met gebruikers in een natuurlijke (gesproken, red.) taal. Dit houdt dus in dat een chatbot software is die reacties geeft op de input van een gebruiker. Zowel de input van de gebruiker in het programma als de output van de chatbot zijn in gewone geschreven taal. Een chatbot is dus niks meer dan software die met een gebruiker kan chatten zonder dat er (buiten de gebruiker zelf) mensen aan te pas komen. 
 
-\subsection{Structuur van een chatbot}
+\section{Structuur van een chatbot}
 
 Om een chatbot te kunnen testen is er een grondige kennis nodig van de opbouw van een chatbot. Volgens \textcite{Cahn2017} bestaat een chatbot uit 3 onderdelen: een dialoogagent, een rationele agent en een belichamende agent. De eerste twee onderdelen zijn onderdelen die de functionaliteit van een chatbot bepalen en zijn dus essentiële onderdelen. De belichamende agent is een optionele component. Elk van deze agenten heeft uiteraard zijn eigen functionaliteit. 
 
@@ -37,7 +41,7 @@ Om een chatbot te kunnen testen is er een grondige kennis nodig van de opbouw va
 
 Aangezien de belichamende component geen kern functionaliteit is van een chatbot is deze ook niet essentieel om te testen. Hieruit volgt dat het testen van een chatbot neerkomt op het testen van twee functionaliteiten: het vermogen van een chatbot om input van een gebruiker te kunnen begrijpen enerzijds en het vermogen om op deze input een verstaanbaar en relevant antwoord te geven  anderzijds.
 
-\subsection{Testen van software}
+\section{Testen van software}
 
 Aangezien een chatbot een software project is kan een chatbot uiteraard ook getest worden. Alvorens dieper in te gaan op het testen van een chatbot is het belangrijk om te weten wat het testen van software inhoudt en wat de voordelen hiervan zijn. Volgens \textcite{Jorgensen2018} heeft het testen van software twee grote doelen:
 
