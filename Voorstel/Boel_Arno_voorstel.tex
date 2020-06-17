@@ -25,23 +25,19 @@
 
 %---------- Titel & auteur ----------------------------------------------------
 
-% TODO: geef werktitel van je eigen voorstel op
-\PaperTitle{Regressietesten voor een chatbot: een vergelijkende studie en proof of concept}
-\PaperType{Onderzoeksvoorstel Bachelorproef 2019-2020} % Type document
-
 % TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
 \Authors{Arno Boel\textsuperscript{1}} % Authors
-\CoPromotor{Stijn De Smet\textsuperscript{2} (Clever)}
+\CoPromotor{\textsuperscript{2} (Delaware)}
 \affiliation{\textbf{Contact:}
-  \textsuperscript{1} \href{mailto:arno.boel@student.hogent.be}{arno.boel@student.hogent.be};
-  \textsuperscript{2} \href{mailto:s.desmet@zoovu.com}{s.desmet@zoovu.com};
+    \textsuperscript{1} \href{mailto:arno.boel@student.hogent.be}{arno.boel@student.hogent.be};
+    \textsuperscript{2} \href{mailto:}{};
 }
 
 %---------- Abstract ----------------------------------------------------------
 
 \Abstract
 {
-    In deze studie zal een grondig onderzoek gedaan worden naar de reeds bestaande mogelijkheden om regressietesten (testen of eerder werkende code nog steeds werkt na wijzigingen) te gebruiken bij het ontwikkelen van een chatbot. Een chatbot is een applicatie die zelfstandig kan antwoorden op input van een gebruiker. Een gebruiker kan dus chatten met de applicatie. Aangezien een chatbot afhankelijk is van de input van een gebruiker kunnen er verschillende zaken mislopen. Enerzijds kan de input van de gebruiker verkeerd geïnterpreteerd worden en anderzijds kan er een verkeerd antwoord gegeven worden op de input van de gebruiker. In beide gevallen zal de gebruiker een verkeerd of zelfs geen antwoord krijgen. Om zo'n fouten tegen te gaan is het belangrijk om de chatbots te gaan testen. Op dit moment worden de chatbots bij Clever nog niet getest door het gebruik van regressietesten, waardoor men niet kan garanderen dat nieuwe code reeds bestaande code niet kapot maakt. Het doel van deze studie is om een aanbeveling te kunnen doen over de meest gebruiksvriendelijke en onderhoudbare manier om regressietesten te gaan schrijven voor de chatbots. Er zal grondig onderzocht worden of er reeds manieren bestaan om dit probleem op te lossen. Indien dit het geval is zal er effectief een test uitgewerkt worden die de basis kan vormen voor het gebruiken van regressietesten bij Clever. Indien er op dit moment nog geen gebruiksvriendelijke en onderhoudbare oplossingen voor handen zijn zal de basis voor een Domain Specific Language (een taal die het testen in deze specifieke context mogelijk maakt) gelegd worden. In dit document wordt het voorstel voor het uiteindelijke onderzoek beschreven. Er wordt gestart met het onderzoeksdomein en enkele sleutelwoorden. Verder bevat dit voorstel een literatuurstudie en de manier waarop dit onderzoek gevoerd zal worden. Tot slot zullen de verwachte resultaten en conclusies besproken worden en er wordt afgesloten met een referentielijst. Met dit onderzoek wordt een poging gedaan om voor Clever een gebruiksvriendelijke manier aan te bieden om hun chatbots te gaan testen. Verwacht wordt dat dit een goed onderbouwde aanbeveling zal opleveren. Er zullen zeker reeds oplossingen bestaan om regressietesten te schrijven . Of deze ook effectief gebruiksvriendelijk zijn zal een eerder subjectief resultaat zijn dat zeer sterk zal samenhangen met de ingesteldheid van de gebruikers. De onderhoudbaarheid van de regressietesten zal echter wel objectief bepaald kunnen worden. De conclusie zal dus een duidelijke aanbeveling maken van een bepaald framework. Dit werk kan Clever gaan helpen in de toekomst om minder bugs te hebben in hun bots en om sneller nieuwe onderdelen te gaan toevoegen doordat reeds bestaande code niet wordt kapot gemaakt. Dit onderzoek kan echter ook een meerwaarde bieden voor andere bedrijven die chatbots ontwikkelen en deze willen gaan testen met behulp van regressietesten.
+    In deze studie zal een grondige vergelijking gemaakt worden tussen 3 verschillende multiplatform programeertalen: ReactNative, Blazot en MAUI. Deze geven een zeer groot voordeel ten opzichte van native programeertalen aangezien er slechts één applicatie geschreven hoeft te worden die dan op verschillende platformen kan werken. Het doel van deze studie is om deze drie talen met elkaar te gaan vergelijken om zo een beeld te vormen van hun sterke en zwakke punten. In de conclusie zullen deze resultaten beknopt besproken worden en wordt een voorstel gedaan van welke taal de beste keuze is om in de toekomst te gaan gebruiken. 
 }
 
 %---------- Onderzoeksdomein en sleutelwoorden --------------------------------
@@ -63,7 +59,7 @@
 %
 % De andere sleutelwoorden zijn vrij te kiezen
 
-\Keywords{Testing framework --- chatbot --- regressietest} % Keywords
+\Keywords{Applicatieontwikkeling --- multiplatform} % Keywords
 \newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
 
 %---------- Titel, inhoud -----------------------------------------------------
