@@ -1,0 +1,93 @@
+%==============================================================================
+% Sjabloon onderzoeksvoorstel bachelorproef
+%==============================================================================
+% Gebaseerd op LaTeX-sjabloon ‘Stylish Article’ (zie voorstel.cls)
+% Auteur: Jens Buysse, Bert Van Vreckem
+%
+% Compileren in TeXstudio:
+%
+% - Zorg dat Biber de bibliografie compileert (en niet Biblatex)
+%   Options > Configure > Build > Default Bibliography Tool: "txs:///biber"
+% - F5 om te compileren en het resultaat te bekijken.
+% - Als de bibliografie niet zichtbaar is, probeer dan F5 - F8 - F5
+%   Met F8 compileer je de bibliografie apart.
+%
+% Als je JabRef gebruikt voor het bijhouden van de bibliografie, zorg dan
+% dat je in ``biblatex''-modus opslaat: File > Switch to BibLaTeX mode.
+
+\documentclass{voorstel}
+
+\usepackage{lipsum}
+
+%------------------------------------------------------------------------------
+% Metadata over het voorstel
+%------------------------------------------------------------------------------
+
+%---------- Titel & auteur ----------------------------------------------------
+
+% TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
+\Authors{Arno Boel\textsuperscript{1}} % Authors
+\CoPromotor{\textsuperscript{2} (Delaware)}
+\affiliation{\textbf{Contact:}
+    \textsuperscript{1} \href{mailto:arno.boel@student.hogent.be}{arno.boel@student.hogent.be};
+    \textsuperscript{2} \href{mailto:}{};
+}
+
+%---------- Abstract ----------------------------------------------------------
+
+\Abstract
+{
+    In deze studie zal een grondige vergelijking gemaakt worden tussen 3 verschillende multiplatform programeertalen: ReactNative, Blazor en MAUI. Deze geven een zeer groot voordeel ten opzichte van native programeertalen aangezien er slechts één applicatie geschreven hoeft te worden die dan op verschillende platformen kan werken. Het doel van deze studie is om deze drie talen met elkaar te gaan vergelijken om zo een beeld te vormen van hun sterke en zwakke punten. In de conclusie zullen deze resultaten beknopt besproken worden en wordt een voorstel gedaan van welke taal de beste keuze is om in de toekomst te gaan gebruiken. 
+}
+
+%---------- Onderzoeksdomein en sleutelwoorden --------------------------------
+% TODO: Sleutelwoorden:
+%
+% Het eerste sleutelwoord beschrijft het onderzoeksdomein. Je kan kiezen uit
+% deze lijst:
+%
+% - Mobiele applicatieontwikkeling
+% - Webapplicatieontwikkeling
+% - Applicatieontwikkeling (andere)
+% - Systeembeheer
+% - Netwerkbeheer
+% - Mainframe
+% - E-business
+% - Databanken en big data
+% - Machineleertechnieken en kunstmatige intelligentie
+% - Andere (specifieer)
+%
+% De andere sleutelwoorden zijn vrij te kiezen
+
+\Keywords{Applicatieontwikkeling --- cross platform} % Keywords
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
+
+%---------- Titel, inhoud -----------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%------------------------------------------------------------------------------
+% Hoofdtekst
+%------------------------------------------------------------------------------
+
+% De hoofdtekst van het voorstel zit in een apart bestand, zodat het makkelijk
+% kan opgenomen worden in de bijlagen van de bachelorproef zelf.
+\input{voorstel-inhoud}
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+% TODO: de gerefereerde werken moeten in BibTeX-bestand ``voorstel.bib''
+% voorkomen. Gebruik JabRef om je bibliografie bij te houden en vergeet niet
+% om compatibiliteit met Biber/BibLaTeX aan te zetten (File > Switch to
+% BibLaTeX mode)
+
+\phantomsection
+\printbibliography[heading=bibintoc]
+
+\end{document}
