@@ -1,0 +1,29 @@
+% Encoding: UTF-8
+
+@Article{Corral2012,
+  author       = {Luis Corral and Andrea Janes and Tadas Remencius},
+  title        = {Potential advantages and disadvantages of multiplatform development frameworks – A vision on mobile environments},
+  journal      = {Procedia Computer Science},
+  journaltitle = {Procedia Computer Science 10},
+  year         = {2012},
+  url          = {https://core.ac.uk/download/pdf/82038165.pdf},
+}
+
+@Conference{Xanthopoulos2013,
+  author = {Spyros Xanthopoulos and Stelios Xinogalos},
+  title  = {A Comparative Analysis of Cross-platform Development Approaches for Mobile Applications},
+  year   = {2013},
+  url    = {https://www.researchgate.net/publication/258010031_A_Comparative_Analysis_of_Cross-platform_Development_Approaches_for_Mobile_Applications},
+}
+
+@Article{El-Kassas2014,
+  author       = {Wafaa S. El-Kassas and Bassem A. Abdullah and Ahmed H. Yousef and Ayman M.Wahba},
+  title        = {Taxonomy of Cross-Platform Mobile Applications Development Approaches},
+  journal      = {Ain Shams Engineering Journal},
+  journaltitle = {Volume 8},
+  year         = {2014},
+  date         = {2009-13},
+  url          = {https://www.sciencedirect.com/science/article/pii/S2090447915001276},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
