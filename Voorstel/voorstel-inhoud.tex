@@ -39,17 +39,17 @@ De gebruikers van de applicatie kunnen ook (zij het op een steeds mindere basis)
 
 \subsection{Achtergrond React Native}
 
-React native (2015) is een open source cross platform framework dat ontwikkeld is en onderhouden wordt door Facebook. Zoals de naam al doet vermoeden steunt dit framework op React (een Javascript library, ook ontwikkeld door Facebook). Dit is een library die speciaal is ontwikkeld om gebruikersinterfaces te maken. De voordelen van React worden meegenomen in het framework: zo kan er bijvoorbeeld zeer snel vernieuwd worden ('hot reload'). De ontwikkelaar slaat de aanpassingen op en de applicatie geeft deze wijzigingen direct weer, in tegenstelling tot native frameworks waar er steeds moet gewacht worden tot de applicatie 'gebouwd' is. Dit geeft de ontwikkelaar de kans om makkelijker kleine wijzigingen te gaan doorvoeren en het effect van deze wijzigingen sneller te kunnen zien verschijnen.
+React Native (2015) is een open source cross platform framework dat ontwikkeld is en onderhouden wordt door Facebook. Zoals de naam al doet vermoeden steunt dit framework op React (een Javascript library, ook ontwikkeld door Facebook). Dit is een library die speciaal is ontwikkeld om gebruikersinterfaces te maken. De voordelen van React worden meegenomen in het framework: zo kan er bijvoorbeeld zeer snel vernieuwd worden ('hot reload'). De ontwikkelaar slaat de aanpassingen op en de applicatie geeft deze wijzigingen direct weer, in tegenstelling tot native frameworks waar er steeds moet gewacht worden tot de applicatie 'gebouwd' is. Dit geeft de ontwikkelaar de kans om makkelijker kleine wijzigingen te gaan doorvoeren en het effect van deze wijzigingen sneller te kunnen zien verschijnen.
 
-React Native maakt ook gebruik van eigen componenten om de gebruikersinterface van de applicatie te gaan beschrijven. Deze worden dan gecompileerd naar de corresponderende native componenten. Door op deze manier te werk te gaan kunnen ontwikkelaars gebruik maken van de native API's. Dit levert een groot voordeel op voor de native uitstraling van de applicatie en stelt native ontwikkelaars in staat om snel aan de slag te kunnen met React Native door de grote gelijkenissen met de native omgeving.
+Een andere eigenschap van React Native is dat het gebruik maakt van eigen componenten om de gebruikersinterface van de applicatie te gaan beschrijven. Deze worden dan gecompileerd naar de corresponderende native componenten. Door op deze manier te werk te gaan kunnen ontwikkelaars gebruik maken van de native API's. Dit levert een groot voordeel op voor de native uitstraling van de applicatie en stelt native ontwikkelaars in staat om snel aan de slag te kunnen met React Native door de grote gelijkenissen met de native omgeving.
 
 Zoals eerder vermeld is React Native ontwikkeld door Facebook. Het is echter een open source framework en de code hiervan is integraal te vinden op GitHub. Er zijn heel veel contributors aan dit framework, waardoor er steeds nieuwe zaken bijkomen die het framework nog beter maken. Dit zijn bovendien niet enkel individuen die hun bijdrage leveren, er zijn ook enkele bedrijven die mee helpen aan de ontwikkeling van React Native.
 
 \subsection{Achtergrond Flutter}
 
-Flutter is een 'software development kit' (SDK) ontwikkeld door Google in 2017.Net zoals React Native is ook Flutter volledig open source. Het kan dus ook rekenen op een grote community en voortdurende verdere ontwikkeling. De laatste stabiele versie van Flutter werd uitgebracht door Google op 6/5/2020. Het is dus een zeer recente update waardoor de SDK kan rekenen op de laatste nieuwe ontwikkelingen op het vlak van cross platform development. Flutter apps worden geschreven in Dart, een object georiënteerde programmeertaal gebaseerd op klassen en ontwikkeled door Google. Het grote voordeel van Dart is dat het gecompileerd kan worden naar Javascript maar ook rechtstreeks naar native code, wat een groot voordeel oplevert op het vlak van prestaties. 
+Flutter is een software development kit (SDK) ontwikkeld door Google in 2017.Net zoals React Native is ook Flutter volledig open source. Het kan rekenen op een grote community en voortdurende verdere ontwikkeling. De laatste stabiele versie van Flutter werd uitgebracht door Google op 6/5/2020. Het is dus een zeer recente update waardoor de SDK kan rekenen op de laatste nieuwe ontwikkelingen op het vlak van cross platform development. Flutter apps worden geschreven in Dart, een object georiënteerde programmeertaal gebaseerd op klassen en ontwikkeld door Google. Het grote voordeel van Dart is dat het gecompileerd kan worden naar Javascript maar ook rechtstreeks naar native code, wat een groot voordeel oplevert op het vlak van prestaties. 
 
-De SDK beschikt over zijn eigen widgets, die gebruikt kunnen worden om een native gevoel te creëeren voor de applicatie. Er is een library met widgets voor zowel Android als iOS. Door deze widgets te gaan gebruiken hoeft de ontwikkelaar vele zaken niet zelf te gaan definiëren er bekomt men een gebruikersinterfac die consistent is met deze van een native applicatie. 
+Een andere positieve eigenschap is dat de SDK beschikt over zijn eigen widgets. Deze kunnen gebruikt worden om een native gevoel te creëeren voor de applicatie. Er is een library met widgets voor zowel Android als iOS. Door deze widgets te gaan gebruiken hoeft de ontwikkelaar vele zaken niet zelf te gaan definiëren er bekomt men een gebruikersinterface die consistent is met deze van een native applicatie. 
 
 \subsection{Achtergrond .NET MAUI}
 
@@ -68,17 +68,17 @@ Verder beschikt .NET MAUI ook over een MVU-patroon (Model-View-Update). Dit houd
 \section{Methodologie}
 \label{sec:methodologie}
 
-Om een goed beeld te krijgen van de eigenschappen van de drie cross platform frameworks die in deze studie aan bod komen wordt er eerst een grondige literatuurstudie uitgevoerd. Hierin wordt nog geen vergelijking gemaakt, enkel feiten over elk afzonderlik framework komen hier aan bod. Vervolgens zal een vergelijkende studie uitgevoerd worden, waarbij de drie gekozen frameworks vergeleken zullen worden op de volgende punten: 
+Om een goed beeld te krijgen van de eigenschappen van de drie cross platform frameworks die in deze studie aan bod komen wordt er eerst een grondige literatuurstudie uitgevoerd. Hierin wordt nog geen vergelijking gemaakt, enkel feiten over elk framework afzonderlijk komen hier aan bod. Vervolgens zal een vergelijkende studie uitgevoerd worden, waarbij de drie gekozen frameworks vergeleken zullen worden op de volgende punten: 
 
 \begin{itemize}
-    \item Gebruikservaring van de gebruiker van de applicatie (snelheid, native look \&feel)
-    \item Performantie van de applicatie
-    \item Gebruiksvriendelijkheid voor de ontwikkelaar
-    \item Ondersteuning van de community (updates e.d.)
-    \item Toegang tot de native libraries \& API's
+    \item gebruikservaring van de gebruiker van de applicatie (snelheid, native look \&feel)
+    \item performantie van de applicatie
+    \item gebruiksvriendelijkheid voor de ontwikkelaar
+    \item ondersteuning van de community (updates e.d.)
+    \item toegang tot de native libraries \& API's
 \end{itemize}
 
-Ook zal er onderzoek gedaan worden naar de talen waarin applicaties met deze frameworks geschreven worden: React.Js (React Native), Dart (Flutter) en C\# of Blazor (.NET MAUI). Aangezien elk van deze talen zijn eigen sterktes en zwaktes heeft is dit zeker ook een belangrijk punt om mee te gaan onderzoeken. 
+Tijdens het onderzoek zal er ook gefocust worden op de talen waarin applicaties met deze frameworks geschreven worden: React.Js (React Native), Dart (Flutter) en C\# of Blazor (.NET MAUI). Aangezien elk van deze talen zijn eigen sterktes en zwaktes heeft is dit zeker ook een belangrijk punt om mee te gaan onderzoeken. 
 
 Tot slot zal er een enquête gedaan worden binnen het team van delaware naar de reeds bestaande kennis van deze drie frameworks, de voorkeur voor een bepaalde programmeertaal en de haalbaarheid van het overschakelen naar een nieuwe taal. Op deze manier kan er een aanbeveling van een framework gedaan worden specifiek voor het betreffende team.
 
@@ -87,7 +87,7 @@ Tot slot zal er een enquête gedaan worden binnen het team van delaware naar de 
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-De lijn van verwachting van dit onderzoek is dat er niet direct een afgetekend verschil zal zijn tussen de drie frameworks. Ze zullen zeker wel verschillen op bepaalde gebieden en elk zal zijn eigen sterktes en zwaktes hebben. Verder wordt er verwacht dat hoe recenter het framework, hoe beter het framework zal scoren op bepaalde vlakken waar het oudere framework het moeilijk mee heeft: de producenten van het recentere framework hebben namelijk de tijd gehad om na te denken over een manier om de tekortkomingen van de andere frameworks te omzeilen.
+De lijn van verwachting van dit onderzoek is dat er niet direct een afgetekend verschil zal zijn tussen de drie frameworks. Ze zullen zeker wel verschillen op bepaalde gebieden en elk zal zijn eigen sterktes en zwaktes hebben, maar het zal niet eenduidig duidelijk zijn dat het ene framework beter is dan het andere. Verder wordt er verwacht dat hoe recenter het framework, hoe beter het framework zal scoren op bepaalde vlakken waar het oudere framework het moeilijk mee heeft: de producenten van het recentere framework hebben namelijk de tijd gehad om na te denken over een manier om de tekortkomingen van de andere frameworks te omzeilen.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
