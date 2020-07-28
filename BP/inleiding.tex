@@ -5,7 +5,12 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}
 \label{ch:inleiding}
 
-%De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
+%De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp
+%te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te
+%onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de
+%tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties
+%als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de
+%inleiding~\autocite{Pollefliet2011}:
 %
 %\begin{itemize}
 %  \item context, achtergrond
@@ -20,32 +25,77 @@
 \section{Achtergrond}
 \label{sec:achtergrond}
 
-Chatbots worden steeds vaker en vaker gebruikt als eeste aanspreekpunt op een website, waardoor meer gebruikers geholpen kunnen worden met hun specifieke problemen of vragen. Ze werken volledig autonoom en moeten dus voldoen aan bepaalde kwaliteitseisen, zodat het imago van het berdijf niet geschonden wordt door slechte klantenservice. Als een klant bijvoorbeeld een bepaalde vraag stelt wordt er verwacht van de chatbot dat deze steeds het correcte (en dus hetzelfde) antwoord zal geven. 
+Mobiele applicaties zijn niet meer weg te denken uit het dagelijkse leven. Een
+app die je wakker maakt, één die je verteld welke plannen je hebt die dag, een
+andere om je op de hoogte te brengen van de gebeurtenissen in de wereld en ga zo
+maar door. Al deze apps moeten natuurlijk voortdurend onderhouden en verbeterd
+worden door de ontwikkelaars, terwijl deze zich tegelijk ook bezig houden met
+het ontwikkelen van nieuwe applicaties. Eén van de grootste uitdagingen op het
+vlak van mobiele applicatie ontwikkeling is dat er meerdere besturingssystemen
+bestaan voor mobiele apparaten (waarvan Android en iOS zonder twijfel de
+populairste zijn). Ontwikkelaars willen natuurlijk dat zoveel mogelijk mensen
+gebruik kunnen maken van hun applicatie: ze moeten dus zorgen dat de applicatie
+werkt op alle besturingssystemen. De app telkens opnieuw gaan schrijven voor elk
+systeem is echter een tijdrovende en repititieve bezigheid. Om dit probleem uit
+de wereld te helpen werden cross-platform frameworks in het leven geroepen:
+frameworks die de ontwikkelaar in staat stellen om met één enkele broncode de
+applicatie op alle systemen te laten werken.
 
-Net zoals bij andere softwareprojecten worden steeds nieuwe features toegevoegd aan een chatbot, zodat deze steeds beter en beter worden. Als ontwikkelaar is het onontbeerlijk om er zeker van te kunnen zijn dat een nieuwe feature die wordt toegevoegd geen andere reeds bestaande features kapot maakt. Om dit te kunnen vaststellen wordt aan regressietesten gedaan: testen van de onderdelen van de applicatie die niet veranderd zijn om zich er van te vergewissen dat deze nog steeds werken.
+De precieze voordelen (en uiteraard ook nadelen) van cross-platform frameworks
+worden in de studie uitgebreid besproken. Men kan wel direct intuïtief aanvoelen
+dat ze een grote tijdswinst opleveren en dus steeds populairder worden. Doordat
+de populariteit ervan stijgt zijn ook steeds meer producenten van frameworks
+zich hierop gaan storten. Er zijn de laatste jaren zeer veel verschillende
+frameworks uitgebracht, elk met hun eigen sterktes en zwaktes. De vraag dringt
+zich dan ook op welk framework de beste keuze is om mee aan de slag te gaan als
+team van ontwikkelaars in de komende jaren. 
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
 \label{sec:probleemstelling}
 
-%Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's,'' systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+%Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde
+%heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en
+%afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's,'' systeembeheerders,
+%enz.~zijn nog te vaag. Als je een lijstje kan maken van de
+%personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef
+%(dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de
+%doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één
+%persoon (je co-promotor/opdrachtgever).
 
-Testen van software is een proces dat overal reeds goed ingeburgerd is (of zou moeten zijn). In de wereld van de chatbot ontwikkeling is dit niet anders. Het is echter belangrijk dat features niet enkel getest worden op het moment dat ze worden geïmplenteerd, maar ook als andere features worden toegevoegd. Op deze manier kan men zeker zijn dat reeds ontwikkelde features nog steeds werken zoals verwacht. Dit onderzoek zal een aanbeveling doen aan de ontwikkelaars van chatbots binnen Zoovu over hoe het regressie testen van chatbots kan aangepakt worden. Dit houdt een grondig onderzoek in naar de reeds bestaande technieken om een chatbot te testen en hoe deze gebruikt kunnen worden om op een efficiënte manier aan regressietesten te gaan doen. 
+Bij het ontwikkelen van mobiele applicaties zijn er vele zaken waar rekening mee gehouden moet worden, zowel vanuit het standpunt van de ontwikkelaar als dat van de gebruikers. Voor de ontwikkelaar is het onder andere belangrijk om code slechts één keer te moeten schrijven, dat de code onderhoudbaar is en dat de applicatie veilig is om te gebruiken. Vanuit het standpunt van de gebruikers is het belangrijk om een applicatie zonder fouten te hebben die geen last heeft van performantieproblemen, die er mooi uitziet en die regelmatig updates ontvangt zodat deze steeds voldoet aan de laatste nieuwe normen. 
+
+Op de B2B markt is het tevens heel erg belangrijk dat een applicatie werkt op alle besturingssystemen: indien ze niet allemaal beschikken over hetzelfde besturingssysteem moeten ze natuurlijk nog steeds in staat zijn om de applicaties van het bedrijf te gebruiken. Om aan deze heel belangrijke eis te kunnen voldoen is het gebruik van een cross-platform een absolute meerwaarde: slechts één keer schrijven, een applicatie die op alle systemen beschikbaar is en die er overal hetzelfde uitziet. 
+
+Zoals reeds eerder vermeld is er echter een zeer groot aanbod van dergelijke frameworks, elk met hun eigen sterktes en zwaktes. Beslissen met welk framework er de komende jaren gewerkt zal worden is dus allesbehalve een eenvoudige opgave, vandaar dit uitgebreide onderzoek.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
 \label{sec:onderzoeksvraag}
 
-%Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+%Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een
+%onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord
+%heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv.
+%``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag.
+%Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je
+%onderzoek gaat over performantiemetingen, dan 
 
-Hoe kunnen chatbot ontwikkelaars binnen Zoovu efficiënt aan regressietesten doen om de kwaliteit van reeds bestaande onderdelen te waarborgen na het toevoegen van een nieuw onderdeel?
+Hoe kunnen chatbot ontwikkelaars binnen Zoovu efficiënt aan regressietesten doen
+om de kwaliteit van reeds bestaande onderdelen te waarborgen na het toevoegen
+van een nieuw onderdeel?
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
 \label{sec:onderzoeksdoelstelling}
 
-%Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv. om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+%Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor
+%succes? Beschrijf die zo concreet mogelijk. Gaat het bv. om een
+%proof-of-concept, een prototype, een verslag met aanbevelingen, een
+%vergelijkende studie, enz.
 
-Het beoogde resultaat van deze bachelorproef is om een verslag af te leveren met een aanbeveling hoe het regressietesten van chatbots best aangepakt kan worden en met welke technologieën. 
+Het beoogde resultaat van deze bachelorproef is om een verslag af te leveren met
+een aanbeveling hoe het regressietesten van chatbots best aangepakt kan worden
+en met welke technologieën. 
 
-\section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
+\section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this
+        bachelor thesis}}
 \label{sec:opzet-bachelorproef}
 
 % Het is gebruikelijk aan het einde van de inleiding een overzicht te
@@ -54,12 +104,18 @@ Het beoogde resultaat van deze bachelorproef is om een verslag af te leveren met
 
 De rest van deze bachelorproef is als volgt opgebouwd:
 
-In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het testen van chatbots op basis van een literatuurstudie.
+In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand
+van zaken binnen het testen van chatbots op basis van een literatuurstudie.
 
-In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvraag.
+In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de
+gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op
+de onderzoeksvraag.
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 
-In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvraag. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
+In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een
+antwoord geformuleerd op de onderzoeksvraag. Daarbij wordt ook een aanzet
+gegeven voor toekomstig onderzoek binnen dit domein.
+
 
 
