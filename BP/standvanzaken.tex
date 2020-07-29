@@ -1,6 +1,5 @@
-\chapter{\IfLanguageName{dutch}{Stand van zaken}{State of the art}}
+\chapter{\IfLanguageName{dutch}{Stand van zaken}{State of the art }}
 \label{ch:stand-van-zaken}
-
 % Tip: Begin elk hoofdstuk met een paragraaf inleiding die beschrijft hoe
 % dit hoofdstuk past binnen het geheel van de bachelorproef. Geef in het
 % bijzonder aan wat de link is met het vorige en volgende hoofdstuk.
@@ -15,7 +14,6 @@
 %\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 %
 %\lipsum[7-20]
-
 In dit hoofdstuk wordt de huidige stad van zaken binnen het domein van cross-platform frameworks besproken aan de hand van een literatuurstudie. Er wordt begonnen met een algemene uitleg van een cross-platform framework, met alle voor- en nadelen ten opzichte van een native framework. Hierbij worden ook de verschillende soorten cross-platform frameworks besproken. Vervolgens zullen de drie afzonderlijke frameworks van nader bij bekeken worden: hun voor- en nadelen, achtergrond en toekomstvisie. Dit gebeurd zonder een onderlinge vergelijking te maken, deze is pas voor later in dit onderzoek. 
 
 \section{Wat is een cross-platform framework?}
@@ -24,7 +22,7 @@ In dit hoofdstuk wordt de huidige stad van zaken binnen het domein van cross-pla
  
 \section{Voordelen van cross-platform frameworks}
 
-Er zijn vele voordelen verbonden aan cross platform frameworks in vergelijking met native frameworks, zowel voor de ontwikkelaars als voor de gebruikers van de applicatie. De meeste van deze voordelen komen rechtstreeks voort uit het feit dat er slecht één broncode moet geschreven worden. Ten eerste levert het schrijven van één broncode een enorme tijdswinst op voor de ontwikkelaars. Indien een bepaalde applicatie voor twee verschillende besturingssystemen geschreven moet worden zal ofwel één team er langer over doen of zal er een groter eam nodig zijn om allebei de applicaties tegelijk te maken. Door deze beide situaties te voorkomen wordt er een zeer grote kost uitgespaard. 
+Er zijn vele voordelen verbonden aan cross-platform frameworks in vergelijking met native frameworks, zowel voor de ontwikkelaars als voor de gebruikers van de applicatie. De meeste van deze voordelen komen rechtstreeks voort uit het feit dat er slecht één broncode moet geschreven worden. Ten eerste levert het schrijven van één broncode een enorme tijdswinst op voor de ontwikkelaars. Indien een bepaalde applicatie voor twee verschillende besturingssystemen geschreven moet worden zal ofwel één team er langer over doen of zal er een groter team nodig zijn om allebei de applicaties tegelijk te maken. Door deze beide situaties te voorkomen wordt een een grote kost uitgespaard. 
 
 Een ander voordeel is dat de tijd om de applicatie op de markt te brengen gevoelig daalt. Hierdoor wordt een voordeel op de concurentie behaald die misschien aan een gelijkaardige applicatie aan het werken is. 
 
@@ -32,21 +30,20 @@ Verder heeft dit niet enkel een voordeel op het ontwikkelen van nieuwe applicati
 
 Een enkelvoudige broncode levert niet enkel tijdswinst op, ook de connectie met de cloud en eventuele externe services verloopt eenvoudiger. Door slechts één broncode te hebben is er slechts één plaats waar deze externe services moeten worden ingesteld. Hierdoor is dit makkelijker op te zetten en te onderhouden.
 
-Verder bereikt men door een applicatie te ontwikkelen die werkt op alle besturingssystemen een groter doelpubliek met de applicatie. Niet iedereen heeft nu eenmaal een smartphone die werkt op hetzelfde besturingssysteem. Indien men dus een applicatie zou uitbrengen die enkel werkt op Android of iOS verliest men direct een groot aantal potentiële gebruikers. Ook indien er een nieuw populair besturingssysteem zou bijkomen voor smarpthones levert cross platform een voordeel op: de applicatie zal ook op dit besturingssysteem kunnen werken zonder dat er een nieuwe applicatie geschreven hoeft te worden.
+Verder bereikt men door een applicatie te ontwikkelen die werkt op alle besturingssystemen een groter doelpubliek met de applicatie. Niet iedereen heeft nu eenmaal een smartphone die werkt op hetzelfde besturingssysteem. Indien men dus een applicatie zou uitbrengen die enkel werkt op Android of iOS verliest men direct een groot aantal potentiële gebruikers. Ook indien er een nieuw populair besturingssysteem zou bijkomen voor smarpthones levert cross-platform een voordeel op: de applicatie zal ook op dit besturingssysteem kunnen werken zonder dat er een nieuwe applicatie geschreven hoeft te worden (eens de ontwikkelingomgeving hier op voorzien is).
 
 Tot slot heeft het ontwikkelen van één enkele applicatie nog een extra voordeel voor de gebruiker: indien deze overschakelt naar een nieuw besturingssysteem zal hij nog steeds beroep kunnen doen op zijn vertrouwde applicaties. Er is zelfs nog meer: de layout van de applicaties zal identiek het zelfde zijn, aangezien het om één en dezelfde applicatie gaat (mits enkele minieme verschillen eigen aan de verschillende besturingssystemen). Hierdoor moet de gebruiker niet wennen aan een nieuwe layout en stijgt de gebruiksvriendelijkheid en herkenbaarheid.
 
 \section{Nadelen van cross-platform frameworks}
 
-Natuurlijk zijn er, net zoals bij elke technologie, niet enkel voordelen verbonden aan werken met een cross platform framework. Volgens \textcite{Corral2012} zijn er drie partijen die eventuele nadelen kunnen ondervinden: de gebruikers van de applicatie, de ontwikkelaars van de applicatie en de aanbieders van een platform. Voor deze studie zijn enkel de eerste twee groepen relevant.
+Natuurlijk zijn er, net zoals bij elke technologie, niet enkel voordelen verbonden aan werken met een cross-platform framework. Volgens \textcite{Corral2012} zijn er drie partijen die eventuele nadelen kunnen ondervinden: de gebruikers van de applicatie, de ontwikkelaars van de applicatie en de aanbieders van een platform. Voor deze studie zijn enkel de eerste twee groepen relevant.
 
-Voor de ontwikkelaars is de grootste hindernis de (relatief) beperkte ondersteuning vergeleken met native platforms. Dit komt doordat cross platform een vrij recente technologie is en dus nog niet de grote ervaring heeft die native platforms wel reeds hebben. Een bijkomende uitdaging is dat hoewel de broncode slechts één keer geschreven wordt de applicatie wel op verschillende systemen wordt uitgerold. De applicatie moet dus ook op de verschillende systemen getest en onderhouden worden.
+Voor de ontwikkelaars is de grootste hindernis de (relatief) beperkte ondersteuning in vergelijking met native platforms. Dit komt doordat cross-platform een vrij recente technologie is en dus nog niet de grote ervaring heeft die native platforms wel reeds hebben. Een bijkomende uitdaging is dat hoewel de broncode slechts één keer geschreven wordt de applicatie wel op verschillende systemen wordt uitgerold. De applicatie moet dus ook op de verschillende systemen getest en onderhouden worden.
 
-De gebruikers van de applicatie kunnen ook (zij het op een steeds mindere basis) nadelen ondervinden van een applicatie die met een cross platform framework geschreven is. Zo kan het zijn dat een applicatie niet ten volle gebruik maakt van de mogelijkheden van het ene besturingssysteem, omdat het andere besturingssysteem niet over deze mogelijkheden beschikt. Door het feit dat de applicatie geen native applicatie is kan het verder zijn dat de applicatie geen 'native' gevoel geeft: dit wil zeggen dat het er visueel anders kan uitzien dan indien de app geschreven werd met behulp van een native framework. Tot slot kan het zijn dat de applicatie trager is dan native applicaties door een niet optimale code voor dat specifieke besturingssysteem.
+De gebruikers van de applicatie kunnen ook (zij het op een steeds mindere basis) nadelen ondervinden van een applicatie die met een cross-platform framework geschreven is. Zo kan het zijn dat een applicatie niet ten volle gebruik maakt van de mogelijkheden van het ene besturingssysteem, omdat het andere besturingssysteem niet over deze mogelijkheden beschikt. Door het feit dat het geen native applicatie betreft kan het verder zijn dat de applicatie geen 'native' gevoel geeft: dit wil zeggen dat het er visueel anders kan uitzien dan indien de app geschreven werd met behulp van een native framework. Tot slot kan het zijn dat de applicatie trager is dan native applicaties door een niet optimale code voor dat specifieke besturingssysteem.
 
 \section{verschillende aanpakken tot cross-platform}
- 
- In de studie van \textcite{Xanthopoulos2013} worden vier verschillende aanpakken van cross-platform ontwikkelen besproken:
+ Zowel de voor- als nadelen van cross-platform frameworks die hiervoor aan bod kwamen zijn in het algemeen. Er zijn echter verschillende aanpakken van cross-platform ontwikkelen, die elk ook nog eens hun voor- en nadelen hebben.Er zijn in totaal vier verschillende aanpakken van cross-platform ontwikkelen \autocite{Xanthopoulos2013}. Dit zijn:
  
  \begin{itemize}
      \item Webapplicaties
