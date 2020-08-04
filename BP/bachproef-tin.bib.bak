@@ -26,4 +26,41 @@
   url          = {https://www.sciencedirect.com/science/article/pii/S2090447915001276},
 }
 
+@Conference{Dalmasso2013,
+  author = {Isabelle Dalmasso and Soumya Kanti Datta and Christian Bonnet and Navid Nikaein},
+  date   = {2013},
+  title  = {Survey, Comparison and Evaluation of CrossPlatform Mobile Application Development Tools},
+  doi    = {10.1109/IWCMC.2013.6583580},
+  url    = {https://www.researchgate.net/figure/General-architecture-of-cross-platform-mobile-application-development_fig1_261378649},
+}
+
+@DataSet{Liu2020,
+  author = {Shanhong Liu},
+  editor = {JetBrains},
+  date   = {2020-07-02},
+  title  = {Cross-platform mobile frameworks used by software developers worldwide in 2019 and 2020},
+  url    = {https://www.statista.com/statistics/869224},
+}
+
+@Online{Facebook2020,
+  author = {Facebook},
+  date   = {2020},
+  title  = {React Native},
+  url    = {https://reactnative.dev/},
+}
+
+@Book{Eisenman2015,
+  author = {Bonnie Eisenman},
+  date   = {2015-12-03},
+  title  = {Learning React Native: Building Native Mobile Apps with JavaScript},
+  url    = {https://books.google.be/books?id=274fCwAAQBAJ},
+}
+
+@Online{,
+  author = {Google},
+  date   = {2020},
+  title  = {Flutter},
+  url    = {https://flutter.dev/},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
