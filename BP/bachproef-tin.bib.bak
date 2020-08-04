@@ -56,11 +56,102 @@
   url    = {https://books.google.be/books?id=274fCwAAQBAJ},
 }
 
-@Online{,
+@Online{Google2020,
   author = {Google},
   date   = {2020},
   title  = {Flutter},
   url    = {https://flutter.dev/},
+}
+
+@Online{Apache2020,
+  author = {Apache},
+  date   = {2020},
+  title  = {Cordova},
+  url    = {https://cordova.apache.org/docs/en/9.x/guide/overview/},
+}
+
+@Book{Griffith2017,
+  author = {Chris Griffith},
+  date   = {2017-08-18},
+  title  = {Mobile App Development with Ionic, Revised Edition: Cross-Platform Apps with Ionic, Angular, and Cordova},
+  url    = {https://books.google.be/books?id=x9MxDwAAQBAJ},
+}
+
+@Conference{Majchrzak2018,
+  author = {Tim A. Majchrzak and Andreas Biørn-Hansen and Tor-Morten Grønli},
+  date   = {2018},
+  title  = {Progressive Web Apps: the Definite Approach to Cross-Platform Development?},
+  url    = {https://www.semanticscholar.org/paper/Progressive-Web-Apps:-the-Definite-Approach-to-Majchrzak-Biørn-Hansen/672324aaa5de7c41a57d951898d2a7dd21b15f04},
+}
+
+@Online{Schiemann2019,
+  author = {Dylan Schiemann},
+  date   = {2019-01-23},
+  title  = {Ionic Version 4: From Angular to React, Vue, and Web Components},
+  url    = {https://ionicframework.com/press/release/2019/ionic-framework-4-release},
+}
+
+@Online{Microsoft2020,
+  author = {Microsoft},
+  date   = {2020},
+  title  = {What is Xamarin},
+  url    = {https://dotnet.microsoft.com/apps/xamarin},
+}
+
+@Online{NativeScript2020,
+  author = {NativeScript},
+  date   = {2020},
+  title  = {NativeScript},
+  url    = {https://nativescript.org/},
+}
+
+@Book{Anderson2016,
+  author = {Nathanael J. Anderson},
+  date   = {2016-01-28},
+  title  = {Getting Started with NativeScript},
+  url    = {https://books.google.be/books?id=gAYcDAAAQBAJ},
+}
+
+@Online{Belov2018,
+  author = {Roman Belov},
+  date   = {2018-10-29},
+  title  = {Kotlin 1.3 Released with Coroutines, Kotlin/Native Beta, and more},
+  url    = {https://blog.jetbrains.com/kotlin/2018/10/kotlin-1-3/},
+}
+
+@Online{JetBrains2020,
+  author = {JetBrains},
+  date   = {2020},
+  title  = {Kotlin Multiplatform},
+  url    = {https://www.jetbrains.com/lp/mobilecrossplatform/},
+}
+
+@Book{Vasilkov2015,
+  author = {Mark Vasilkov},
+  date   = {2015-01-29},
+  title  = {Kivy Blueprints},
+  url    = {https://books.google.be/books?id=U-JxBgAAQBAJ},
+}
+
+@Online{Kivy2020,
+  author = {Kivy},
+  date   = {2020},
+  title  = {Kivy},
+  url    = {https://kivy.org},
+}
+
+@Online{Shcherban2020,
+  author = {Vlad Shcherban},
+  date   = {2020-04-30},
+  title  = {Future of Corona},
+  url    = {https://coronalabs.com/blog/2020/04/30/future-of-corona/},
+}
+
+@Online{Coronalabs2020,
+  author = {Coronalabs},
+  date   = {2020},
+  title  = {Corona},
+  url    = {https://coronalabs.com/},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

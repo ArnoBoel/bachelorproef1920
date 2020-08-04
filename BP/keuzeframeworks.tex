@@ -9,7 +9,7 @@ Om tot een lijst van de populairste frameworks te komen werd gekeken naar de res
 
 In figuur \ref{fig:frameworkPopularity} zijn de resultaten van de ondervraging door JetBrains te zien. Uit deze figuur blijkt dat er enkele zeer populaire frameworks zijn, waarvan React Native en Flutter de populairste zijn. Een interessante opmerking is dat de populariteit van Flutter sterk gestegen is (+9\%) in 2020 in vergelijking met 2019, waar die van React Native hetzelfde gebleven is (42\%). Anderzijds is de populariteit van enkele andere frameworks sterk gedaald: Cordova (-11\%), Ionic (-10\%) en Xamarin (-12\%) zijn een heel pak gebruikers kwijt geraakt. Tot slot zijn helemaal rechts enkele frameworks te zien die in 2019 door geen enkele van de ondervraagden gebruikt werden maar in 2020 wel een bepaald (weliswaar laag) percentage gebruikers weten te overtuigen. Zo duikt bijvoorbeeld Kotlin Multiplatform op in de ondervraging, met 2\% van de ondervraagden die aangeven dit te gebruiken. Ook Kivy en Corona duiken op in de resultaten van de ondervraging in 2020 met elk 1\% van de ondervraagden die aangeeft er gebruik van te maken.
 
-Alle frameworks die aan bod komen in deze ondervraging zullen in de volgende sectie kort besproken worden en vervolgens afgetoetst worden tegen de gestelde eisen. Het is namelijk niet automatisch zo dat het (op dit moment) populairste framework ook meteen de beste keuze is voor de komende jaren.
+Alle frameworks die aan bod komen in deze ondervraging zullen in de volgende sectie kort besproken worden en vervolgens afgetoetst worden tegen de gestelde eisen (behalve Apache Flex en Dojo, gezien de reeds beperkte populariteit in 2019 en de daling in populariteit in 2020). Het is namelijk niet automatisch zo dat het (op dit moment) populairste framework ook meteen de beste keuze is voor de komende jaren.
 
 \begin{figure}
     \includegraphics[width=\linewidth]{PopularFrameworksGraph.png}
@@ -17,17 +17,49 @@ Alle frameworks die aan bod komen in deze ondervraging zullen in de volgende sec
     \label{fig:frameworkPopularity}
 \end{figure}
 
-\section{Achtergrond frameworks en aftoetsing tegen eisen}
+\section{Achtergrond frameworks}
 
 In deze sectie wordt de achtergrondinformatie van alle frameworks die aan bod komen in de ondervraging van JetBrains kort besproken. Vervolgens worden ze één voor één afgetoetst aan de in hoofdstuk \ref{ch:eisen-framework} gestelde eisen. De frameworks die aan alle eisen voldoen worden vervolgens uitgebreid voorgesteld in hoofdstuk ... 
 
 \subsection{React Native}
 
-React Native (2015) is een open source cross platform framework dat ontwikkeld is en onderhouden wordt door Facebook \autocite. Zoals de naam al doet vermoeden steunt dit framework op React (een Javascript library, ook ontwikkeld door Facebook). React is speciaal ontwikkeld om gebruikersinterfaces te maken, maar waar React zelf zich richt op webbrowsers focust React Native zich op mobiele platformen. Met behulp van React Native kunnen applicaties geschreven worden die er helemaal native uitzien en dit in een taal die reeds heel erg gekend is onder ontwikkelaars \autocite{Eisenman2015}.
+React Native (2015) is een open source cross-platform framework dat ontwikkeld is en onderhouden wordt door Facebook \autocite. Zoals de naam al doet vermoeden steunt dit framework op React (een Javascript library, ook ontwikkeld door Facebook). React is speciaal ontwikkeld om gebruikersinterfaces te maken, maar waar React zelf zich richt op webbrowsers focust React Native zich op mobiele platformen. Met behulp van React Native kunnen applicaties geschreven worden die er helemaal native uitzien en dit in een taal die reeds heel erg gekend is onder ontwikkelaars \autocite{Eisenman2015}.
 
 \subsection{Flutter}
 
 Flutter is een software development kit (SDK) ontwikkeld door Google in 2017. Het is een 'UI toolkit' om native gecompileerde apps te maken die er mooi uizien met een enkele broncode \autocite{Google2020}. Net zoals React Native is ook Flutter volledig open source. Het kan rekenen op een grote community en voortdurende verdere ontwikkeling. De laatste stabiele versie van Flutter werd uitgebracht door Google op 6/5/2020. Het is dus een zeer recente update waardoor de SDK kan rekenen op de laatste nieuwe ontwikkelingen op het vlak van cross platform development. Flutter apps worden geschreven in Dart, een object georiënteerde programmeertaal gebaseerd op klassen en ontwikkeld door Google. Het grote voordeel van Dart is dat het gecompileerd kan worden naar Javascript maar ook rechtstreeks naar native code, wat een groot voordeel oplevert op het vlak van prestaties.
 
+\subsection{Cordova}
+
+Cordova is een framework dat ontwikkeld is door Apache en bestaat al sinds 2011 (toen nog onder de naam PhoneGap). Het is een open source framework dat gebruikt kan worden voor het ontwikkelen van cross-platform mobiele applicaties. De talen die gebruikt worden zijn HTML5, CSS3 en Javascript \autocite{Apache2020}. Dit zijn de standaard talen voor de ontwikkeling van webapplicaties, een ontwikkelaar moet dus geen nieuwe taal leren om met Cordova aan de slag te gaan. Applicaties worden uitgevoerd binnen specifieke wrappers per platform en maken gebruik van de native API's om de specifieke hardware componenten van een systeem te gebruiken.
+
+\subsection{Ionic}
+
+Ionic is een UI toolkit voor het maken van mobiele webapplicaties. Het is ontwikkeld door Ionic zelf en is een open source project. Ionic bestaat uit drie lagen. De basis is Apache Cordova: het is dus gebaseerd op een ander framework voor cross-platform ontwikkeling en voegt hier nog extra troeven aan toe. Bovenop Cordova is er een frontend framework geplaats voor het ontwikkelen van de gebruikersinterface. In de eerste versies van Ionic was dit Angular, maar sinds versie 4 is de gebruiker zelf vrij om te kiezen. Er is ondersteuning aanwezig voor Angular, React, Vue.js en web componenten \autocite{Schiemann2019}. Ionic geeft de ontwikkelaar dus zelf de keuze met welk frontend framework gewerkt wordt. De laatste laag tot slot is het Ionic framework zelf: de visuele weergave van het framework en een set van componenten die het mogelijk maken om op een eenvoudige manier de gebruikersinterface te beschrijven.
+
+\subsection{Xamarin}
+
+Xamarin is een uitbreiding van het .NET platform van Windows. Het levert een framework dat toegang geeft tot de native eigenschappen van een platform, libraries om de native API's te kunnen gebruiken en een eigen markup taal (XAML) om de gebruikersinterface te beschrijven \autocite{Microsoft2020}. Het grote voordeel van het feit dat Xamarin .NET uitbreid is dat alle mogelijkheden en ondersteuning van .NET ook beschikbaar is voor Xamarin. Ontwikkelaars die reeds gewoon zijn om met .NET te werken kunnen dus onmiddelijk aan de slag met het ontwikkelen van mobiele applicaties met dit framework.
+
+\subsection{Unity}
+
+Unity is een cross-platform framework dat zich richt op het ontwikkelen van games voor mobiele apparaten. Het is uitermate geschikt voor het creëeren van 3D content en complexe graphics. 
+
+\subsection{NativeScript} 
+
+NativeScript is een open source framework voor het bouwen van mobiele applicaties die native aanvoelen. Net als bij Ionic kan er gebruik gemaakt worden van verschillende frontend frameworks (Angular en Vue.js) of de ontwikkelaar kan aan de slag met JavaScript of TypeScript \autocite{NativeScript2020}. Het grootste voordeel van NativeScript is dat het rechtstreekse toegang geeft tot de native API's. De ontwikkelaar moet dus niet wachten tot iemand een brug geschreven heeft om nieuwe eigenschappen te gebruiken. Van zodra nieuwe eigenschappen beschikbaar zijn van een platform kan de ontwikkelaar deze gebruiken. NativeScript is dus geen wrapper rond een WebView, in tegenstelling tot vele andere cross-platform frameworks \autocite{Anderson2016}.
+
+\subsection{Kotlin Multiplatform}
+
+Kotlin is een open source SDK die de ontwikkelaar toelaat om cross-platform applicaties te schrijven en uitgebracht is door JetBrains. Door het feit dat dit een SDK is kan de ontwikkelaar delen van de applicatie in Kotlin schrijven, zonder dat de gehele applicatie opnieuw geschreven hoeft te worden (zoals wel het geval is bij een framework). Verder laat Kotlin Multiplatform ook toe om toch platform specifieke code te schrijven indien er zaken zijn die niet cross-platform opgelost kunnen worden. Door deze mogelijkheid kan de ontwikkelaar ook onmiddelijk inspringen op nieuwe eigenschappen van een platform: van zodra een eigenschap beschikbaar is kan deze ook gebruikt worden in de applicatie \autocite{JetBrains2020}. De mogelijkheid voor het schrijven van cross-platform applicaties met Kotlin is wel nog een experimentele functionaliteit, die beschikbaar is sinds versie 1.3 \autocite{Belov2018}.
+
+
+\subsection{Kivy}
+
+Kivy is een open source grafische gebruikersinterface library die het mogelijk maakt om met Python cross-platform mobiele applicaties te schrijven \autocite{Vasilkov2015}. Het stelt de ontwikkelaar in staat om innovatieve gebruikersinterfaces te maken, zoals multi-touch apps. Het is in staat om zware grafische gebruikersinterfaces te tonen en dus ook geschikt voor het ontwikkelen van mobiele games \autocite{Kivy2020}. De eerste release van de library was op 1/2/2011. Het is dus een library die al een tijdje mee gaat en dus geen last meer heeft van kinderziektes.
+
+\subsection{Corona}
+
+Corona is een cross-platform framework dat ideaal is voor het snelle ontwikkelen van mobiele applicaties en games. Het is gebaseerd op Lua, een open source scipting taal. Er zijn vele plugins beschikbaar en er is toegang tot de native API's indien er geen plugin beschikbaar is voor een bepaalde eigenschap. Het framework beschikt over een simulator die de ontwikkelaar toelaat om aanpassingen direct te kunnen zien \autocite{Coronalabs2020}. Een nadeel is wel dat het bedrijf achter Corona niet meer bestaat sinds 1/5/2020. De software gaat verder als een open source project, maar het toekomstige bestaan en updates zijn dus niet langer gegarandeerd \autocite{Shcherban2020}.
 
 
