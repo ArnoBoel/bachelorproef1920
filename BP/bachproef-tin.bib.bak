@@ -154,4 +154,32 @@
   url    = {https://coronalabs.com/},
 }
 
+@Online{Hunter2020,
+  author = {Scott Hunter},
+  date   = {2020-05-19},
+  title  = {Introducing .NET Multi-platform App UI},
+  url    = {https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/},
+}
+
+@Online{Suarez2020,
+  author = {Javier Suárez},
+  date   = {2020-05-19},
+  title  = {.NET MAUI Roadmap},
+  url    = {https://github.com/dotnet/maui/wiki/Roadmap},
+}
+
+@Online{Nakazawa2019,
+  author = {Christoph Nakazawa},
+  date   = {2019-04-17},
+  title  = {The React Native Ecosystem},
+  url    = {https://github.com/facebook/react-native/blob/master/ECOSYSTEM.md},
+}
+
+@Online{,
+  author = {Facebook},
+  date   = {2020},
+  title  = {React Navigation},
+  url    = {https://reactnative.dev/docs/navigation},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
