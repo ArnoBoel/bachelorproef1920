@@ -30,12 +30,23 @@ Zoals in sectie \ref{subsec:ReactNative} reeds besproken werd is React Native ge
 
 Een zeer groot voordeel van JavaScript komt rechtstreeks voort uit het feit dat het al lang bestaat en dat het zeer populair is: er zijn zeer veel libraries en documentatie beschikbaar die het ontwikkelen van een applicatie sterk vereenvoudigen.
 
-React neemt alle goede eigenschappen van JavaScript mee en brengt zelf enkele belangrijke extra eigenschappen specifiek voor het ontwikkelen van de frontend van applicaties. Belangrijk om te weten is dat React een JavaScript library is en dus geen framework. Dit houdt in dat het gebruikt wordt voor een specifiek deel van de applicatieontwikkeling maar dat er geen volledig project gemaakt kan worden met enkel React.
+React neemt alle goede eigenschappen van JavaScript mee en brengt zelf enkele belangrijke extra eigenschappen specifiek voor het ontwikkelen van de frontend van applicaties. Belangrijk om te weten is dat React een JavaScript library is en dus geen framework. Dit houdt in dat het gebruikt wordt voor een specifiek deel van de applicatieontwikkeling maar dat er geen volledig project gemaakt kan worden met enkel React. Verder heeft dit als voordeel dat er een deel van de applicatie met React geschreven kan worden, maar dat het geen verplichting is om meteen de hele applicatie te gaan herschrijven om React te kunnen gebruiken.
 
 De UI van een applicatie in React Native wordt geschreven aan de hand van React. Dit houdt in dat elk deel van de UI gedefiniëerd wordt als een component. Vervolgens worden al deze componenten samen op een pagina geplaatst om op deze manier de UI op te bouwen. De componenten kunnen dus eigenlijk als bouwstenen gezien worden die samen geplaatst worden om zo een eindresultaat te bekomen. Dit is het basisprincipe van React. Aangezien React Native hier op gebaseerd is is het voor ontwikkelaars die reeds ervaring hebben met React zeer gemakkelijk om van start te gaan met React Native.
 
+Tot slot brengt de React basis nog een zeer groot voordeel met zich mee: de 'hot reload'. React maakt gebruik van een virtual DOM, die een vereenvoudigde beschrijving van de werkelijke DOM bijhoudt. Het aanpassen van de DOM is een traag en intensief proces, het aanpassen van de virtual DOM is echter zeer snel aangezien er niks getoond moet worden op het scherm hiervan. Bij het renderen van een element wordt een snapshot genomen van de virtual DOM die de huidige toestand van de virtual DOM bij houdt. Vervolgens wordt elk object in de virtual DOM geüpdatet. Dit lijkt een intensieve operatie, maar door dat de virtual DOM zo snel geüpdatet kan worden is het dit niet. Nu zijn er dus twee versies van de virtual DOM, één van voor de update en één van erna. Beide versies worden met elkaar vergeleken om vast te stellen wat er exact is veranderd. Enkel de componenten die door de update aangepast zijn worden uiteindelijk in de echte DOM ook aangepast. Door deze werkwijze moet er slechts een deel van de DOM opnieuw gerenderd worden. Dit levert een grote tijdswinst op en stelt React in staat om een 'hot reload' functie te hebben. Dit houdt in dat de UI direct geüpdatet kan worden als de ontwikkelaar aanpassingen opslaat, zonder dat de applicatie opnieuw gebuild moet worden.
+
 \subsubsection{Flutter}
 \label{subsubsec:taalFlutter}
+
+De taal waarin Flutter applicaties geschreven worden, Dart, kwam al kort aan bod in sectie \ref{subsec:Flutter}. Het is ontwikkeld door Google in 2011 maar is pas in gebruik genomen buiten Google in 2017, toen Google Flutter uitbracht. Het is een client-side programmeertaal die geoptimaliseerd is voor het maken van UI's. Door dat het nog vrij recent is zijn er wel maar een beperkt aantal libraries beschikbaar en moet de ontwikkelaar dus soms meer werk verrichten om bepaalde zaken zelf te gaan schrijven. Verder is de documentatie soms ook onvolledig en is er door de beperkte groep gebruikers slechts weinig ondersteuning van de community.
+
+Er zijn natuurlijk ook zeker enkele positieve eigenschappen aan Dart. Zo lijkt de syntax zeer hard op Java en kan een ontwikkelaar die hier ervaring mee heeft dus ook zeer snel aan de slag met Dart. 
+
+Een ander voordeel is dat Dart zowel naar JavaScript als naar native machine code gecompileerd kan worden. Naar JavaScript is handig voor het ontwikkelen van een webapplicatie, omdat JavaScript een brede ondersteuning heeft in de meeste browsers die Dart niet heeft. Voor het ontwikkelen van mobiele applicaties met Flutter is het echter zeer handig dat het gecompileerd kan worden naar machine code. Op deze manier worden prestaties van de applicatie bereikt die gelijk zijn aan die van een native applicatie, ondanks de cross-platform ontwikkeling er van!
+
+\subsubsection{Vergelijking talen frameworks}
+\label{subsubse:vglTalen}
 
 
 
