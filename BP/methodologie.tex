@@ -49,19 +49,11 @@ Zoals eerder vermeld heeft de library zeer veel mogelijkheden en levert het een 
 \subsubsection{Flutter}
 \label{subsubsec:navigatieFlutter}
 
-Flutter maakt voor de navigatie binnen een applicatie gebruik van de klasse Navigator. Deze klasse op zich is ook een widget, de bouwstenen waarmee een Flutter applicatie gebouwd wordt. In Flutter worden de verschillende pagina's en schermen van een applicatie routes genoemd. Deze routes worden op een stack geplaatst, die de volgorde van de routes bijhoudt. Er zijn twee verschillende aanpakken van navigatie binnen Flutter: de ene is gebaseerd op een vaste volgorde waar alle schermen elkaar opvolgen en de andere laat de ontwikkelaar toe om op aangepaste wijze te navigeren tussen verchillende pagina's. Beide aanpakken worden in de volgende paragrafen verder besproken. 
+Flutter maakt voor de navigatie binnen een applicatie gebruik van de klasse Navigator. Deze klasse op zich is ook een widget, de bouwstenen van een applicatie in Flutter. De verschillende pagina's en schermen van een applicatie worden routes genoemd. Deze routes worden op een stack geplaatst, die de volgorde van de routes bijhoudt. Er zijn twee verschillende aanpakken van navigatie binnen Flutter: de ene is gebaseerd op een vaste volgorde waar alle schermen elkaar opvolgen en de andere laat de ontwikkelaar toe om op aangepaste wijze te navigeren tussen verschillende pagina's. Beide aanpakken worden in de volgende paragrafen verder besproken. 
 
 De eerste aanpak laat de gebruiker toe om in een vaste volgorde door de applicatie te navigeren. Dit is voornamelijk belangrijk als de gebruiker terug wil gaan naar het vorige scherm. In dit geval is het alleen maar logisch om naar de vorige route in de stack te gaan. Het is ook meteen de meest eenvoudige vorm van navigatie. Als de gebruiker naar een andere pagina navigeert wordt deze bovenaan de stack geplaatst. Indien de gebruiker terug wenst te gaan wordt de bovenste route terug verwijderd van de stack en komt de gebruiker op de vorige pagina terecht.
 
 De tweede aanpak is een iets gecompliceerdere aanpak. Deze volgt geen logische volgorde maar wel de volgorde die vastgelegd is door de ontwikkelaar. De aanpak berust op een Navigator.pages object. Hieraan kunnen de verschillende pagina's toegevoegd worden. Vervolgens zal de Navigator dit Navigator.pages object omzetten in een stack van routes. Indien een nieuwe pagina wordt toegevoegd aan Navigator.pages dan wordt de stack ook geüpdate. 
-
-Een applicatie kan uit zeer veel verschillende schermen bestaan. Om de navigatie ertussen overzichtelijk te houden voor de ontwikkelaar beschikt Flutter over een functie om de routes een naam te geven. Vervolgens kan de pagina aan de hand van zijn naam getoond worden. In figuur \ref{fig:namedRoutesFlutter} is de definitie van een map te zien die de naam van een route bevat en de builder die de route effectief zal tonen op het scherm. In figuur \ref{fig:useNamedRoutesFlutter} is te zien hoe de route effectief getoond kan worden. Uit de naam van de methode wordt duidelijk dat ook deze methode gebruik maakt van een stack voor de navigatie. De nieuwe route wordt bovenop de stack geplaatst.
-
-Beide methodes maken dus gebruik van dezelfde stack en kunnen dus ook door elkaar gebruikt worden. Dit is een logische aanpak, aangezien een logische volgorde in een applicatie absoluut noodzakelijk is. Indien een gebruiker terug wil gaan is het alleen logisch om naar de vorige stap te gaan, ongeacht welke methode gebruikt werd om naar de huidige pagina te navigeren. 
-
-Verder is het in Flutter mogelijk om een route een waarde te laten terug geven. Dit is bijvoorbeeld handig indien de gebruiker op oké moet klikken alvorens er naar het volgende scherm gegaan kan worden. Indien de gebruiker uit dit scherm gaat door de terug knop van het systeem te gebruiken is de waarde die teruggegeven wordt null en zal het volgende scherm dus niet getoond worden.
-
-Tot slot geeft de Navigator klasse de ontwikkelaar ook de mogelijkheid om popups te tonen op het scherm? Dit zijn schermen die niet de volledig oppervlakte van het scherm in nemen en dus nog een deel van het onderliggende scherm tonen. Het onderliggende scherm wordt echter geblokkeerd, de gebruiker kan dus enkel binnen de popup input geven. Deze popups gedragen zich verder als een normale route, de navigatie naar een popup en er weg van is dus exact hetzelfde.
 
 \begin{figure}
     \includegraphics[width=\linewidth]{NamedRoutesFlutter.png}
@@ -74,6 +66,25 @@ Tot slot geeft de Navigator klasse de ontwikkelaar ook de mogelijkheid om popups
     \caption{Benoemde route tonen in Flutter. Bron: \textcite{Flutter.dev2020}}
     \label{fig:useNamedRoutesFlutter}
 \end{figure}
+
+Een applicatie kan uit zeer veel verschillende schermen bestaan. Om de navigatie ertussen overzichtelijk te houden voor de ontwikkelaar beschikt Flutter over een functie om de routes een naam te geven. Vervolgens kan de pagina aan de hand van zijn naam getoond worden. In figuur \ref{fig:namedRoutesFlutter} is de definitie van een map te zien die de naam van een route bevat en de builder die de route effectief zal tonen op het scherm. In figuur \ref{fig:useNamedRoutesFlutter} is te zien hoe de route effectief getoond kan worden. Uit de naam van de methode wordt duidelijk dat ook deze methode gebruik maakt van een stack voor de navigatie. De nieuwe route wordt bovenop de stack geplaatst.
+
+Beide methodes maken dus gebruik van dezelfde stack en kunnen dus ook door elkaar gebruikt worden. Dit is een logische aanpak, aangezien een logische volgorde in een applicatie absoluut noodzakelijk is. Indien een gebruiker terug wil gaan is het alleen logisch om naar de vorige stap te gaan, ongeacht welke methode gebruikt werd om naar de huidige pagina te navigeren. 
+
+Verder is het in Flutter mogelijk om een route een waarde te laten terug geven. Dit is bijvoorbeeld handig indien de gebruiker op oké moet klikken alvorens er naar het volgende scherm gegaan kan worden. Indien de gebruiker uit dit scherm gaat door de terug knop van het systeem te gebruiken is de waarde die teruggegeven wordt null en zal het volgende scherm dus niet getoond worden.
+
+Tot slot geeft de Navigator klasse de ontwikkelaar ook de mogelijkheid om popups te tonen op het scherm. Dit zijn schermen die niet de volledig oppervlakte van het scherm in nemen en dus nog een deel van het onderliggende scherm tonen. Het onderliggende scherm wordt echter geblokkeerd, de gebruiker kan dus enkel binnen de popup input geven. Deze popups gedragen zich verder als een normale route, de navigatie naar een popup en er weg van is dus exact hetzelfde.
+
+\subsubsection{Vergelijking navigatie}
+\label{subsubsec:vglNavigatie}
+
+Beide frameworks hebben hun eigen techniek om de navigatie aan te pakken. Het grootste verschil tussen beiden is dat React Native gebruik maakt van een library, waar Flutter gebruik maakt van een widget. Dit verschil vloeit voort uit het fundamentele verschil in aanpak tussen beide frameworks. De oorzaak is dat React Native voor een heel groot deel door de community onderhouden wordt. Onder andere de library voor navigatie komt voort uit de community en zit dus niet standaard in React Native, waar dit bij Flutter wel standaard beschikbaar is.
+
+Voor de volgorde van de navigatie bij te houden maken beide frameworks gebruik van een stack. Ze zijn dus beide in staat om terug te gaan naar de vorige pagina. Bij React Native moet elke pagina echter wel steeds benaamd worden om er naar toe te kunnen navigeren, waar het bij Flutter mogelijk is om op voorhand een vaste volgorde te definiëren.
+
+In het gevoel voor de gebruiker is er echter geen verschil tussen beide frameworks. Beide frameworks leveren een navigatie af die overeen komt met de native navigatie. Verder kan de ontwikkelaar bij beide de overgang tussen de verschillende pagina's aanpassen om te voldoen aan de uitstraling die de app wilt geven. 
+
+Tot slot 
 
 
 
