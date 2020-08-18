@@ -189,4 +189,11 @@
   url    = {https://api.flutter.dev/flutter/widgets/Navigator-class.html},
 }
 
+@DataSet{Liu2020a,
+  author = {Shanhong Liu},
+  editor = {Statista},
+  date   = {2020-06-11},
+  title  = {Most used programming languages among developers worldwide, as of early 2020},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
