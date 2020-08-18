@@ -175,7 +175,7 @@
   url    = {https://github.com/facebook/react-native/blob/master/ECOSYSTEM.md},
 }
 
-@Online{,
+@Online{Facebook2020a,
   author = {Facebook},
   date   = {2020},
   title  = {React Navigation},
