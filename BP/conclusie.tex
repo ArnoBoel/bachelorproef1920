@@ -15,16 +15,16 @@
 %onderzoek?
 
 
-In het vorige hoofstuk werd vertrokken van een grote lijst (sectie \ref{subsec:lijstPopulairsteFrameworks} met cross-platform frameworks die in 2019 en 2020 gebruikt werden door ontwikkelaars van overal ter wereld. Al de frameworks (op 2 na die duidelijk niet voldoen aan de eis om in de toekomst een goede keuze te zijn) die voorkwamen in de lijst werden kort besproken (sectie \ref{subsec:achtergrondFrameworks}. Vervolgens werden deze frameworks afgetoetst tegen de eisen die gesteld werden aan het framework in sectie \ref{sec:aftoetsenEisen}. Na het aftoetsen van de frameworks tegenover de eisen waren er slechts twee frameworks die op dit moment voldeden aan alle eisen: React Native en Flutter.
+In het vorige hoofdstuk werd vertrokken van een grote lijst (sectie \ref{subsec:lijstPopulairsteFrameworks} met cross-platform frameworks die in 2019 en 2020 gebruikt werden door ontwikkelaars van overal ter wereld. Al de frameworks (op 2 na die duidelijk niet voldoen aan de eis om in de toekomst een goede keuze te zijn) die voorkwamen in de lijst werden kort besproken (sectie \ref{subsec:achtergrondFrameworks}. Vervolgens werden deze frameworks afgetoetst tegen de eisen die gesteld werden aan het framework in sectie \ref{sec:aftoetsenEisen}. Na het aftoetsen van de frameworks tegenover de eisen waren er slechts twee frameworks die op dit moment voldeden aan alle eisen: React Native en Flutter.
 
 \section{Conclusies vergelijkingen React Native en Flutter}
 \label{sec:conclusieVgl}
 
-Tijdens het vergelijken van React Native en Flutter werd het duidelijk dat beide frameworks enkele verschillen vertonen maar dat de concepten waarop het famework gebaseerd is grotendeels gelijk zijn. Zo beschikken beide frameworks over een manier om aan hot reloading te doen, hebben ze beiden de mogelijkheid om toegang te verkrijgen tot de native API's en is er zelfs geen noemenswaardig verschil te merken in de prestaties van een app die geschreven is met React Native of één met Flutter. In de volgende paragrafen worden de conclusies van de verschillende onderzoekspunten gegeven.
+Tijdens het vergelijken van React Native en Flutter werd het duidelijk dat beide frameworks enkele verschillen vertonen maar dat de concepten waarop het framework gebaseerd is grotendeels gelijk zijn. Zo beschikken beide frameworks over een manier om aan hot reloading te doen, hebben ze beiden de mogelijkheid om toegang te verkrijgen tot de native API's en is er zelfs geen noemenswaardig verschil te merken in de prestaties van een app die geschreven is met React Native of één met Flutter. In de volgende paragrafen worden de conclusies van de verschillende onderdelen van de vergelijking gegeven.
 
 \subsubsection{Taal framework}
 
-Een eerste punt van vergelijking was de taal van het framework. Uit deze vergelijking kan besloten worden dat beide frameworks gebaseerd zijn op een taal die veel mogelijkheden bezit. React Native is gebaseerd op JavaScript, dat al een pak langer bestaat dan Dart(de taal van Flutter). Hierdoor is er veel meer documentatie beschikbaar, zijn er meer externe libraries van de community om vaste taken over te nemen en zijn er meer oplossingen beschikbaar voor veel voorkomende problemen. Op dit moment is React Native dus een betere optie voor de meeste ontwikkelaars, zeker indien er reeds een basiskennis React aanwezig is. Dart heeft echter als voordeel dat de bron code gecompiled kan worden naar native machine code, wat een groot voordeel kan opleveren in sommige gevallen. Indien de taal dus aan maturiteit en populariteit wint in de komende jaren zou de conclusie van het onderzoek op dit punt dus wel in het voordeel van Dart en dus Flutter kunnen overslaan.
+Een eerste punt van vergelijking was de taal van het framework. Uit deze vergelijking kan besloten worden dat beide frameworks gebaseerd zijn op een taal die veel mogelijkheden bezit. React Native is gebaseerd op JavaScript, dat al een pak langer bestaat dan Dart (de taal van Flutter). Hierdoor is er veel meer documentatie beschikbaar, zijn er meer externe libraries van de community om vaste taken over te nemen en zijn er meer oplossingen beschikbaar voor veel voorkomende problemen. Op dit moment is React Native dus een betere optie voor de meeste ontwikkelaars, zeker indien er reeds een basiskennis React aanwezig is. Dart heeft echter als voordeel dat de broncode gecompileerd kan worden naar native machine code, wat een groot voordeel kan opleveren in sommige gevallen. Indien de taal dus aan maturiteit en populariteit wint in de komende jaren zou de conclusie van het onderzoek op dit punt dus wel in het voordeel van Dart en dus Flutter kunnen overslaan.
 
 \subsubsection{Navigatie binnen de applicatie}
 
@@ -38,13 +38,13 @@ Een belangrijk punt voor een framework is dat het de ontwikkelaar toegang geeft 
 
 Als er naar de opbouw van de UI gekeken wordt is er wel een groot verschil tussen beide frameworks. Hoewel de opbouw van de UI met Flutter gebaseerd is op bepaalde concepten van React is het uiteindelijke resultaat een groot verschil met React Native.
 
-De twee frameworks maken allebei gebruik van bouwstenen, die door ze te combineren de UI voorstellen. Bij React Native zijn dit React componenten, bij Flutter zijn het widgets. Beiden kunnen volledig gestijld worden naar de smaak van de ontwikkelaar. 
+De twee frameworks maken allebei gebruik van bouwstenen, die door ze te combineren de UI voorstellen. Bij React Native zijn dit React componenten, bij Flutter zijn het widgets. Bij beiden kan de stijl volledig aangepast worden naar de smaak van de ontwikkelaar. 
 
-De data flow van de ene component naar de andere bij React Native is exact dezelde als deze tussen twee widgets. Data vloeit van de ouder naar het kind, in de omgekeerde richting worden callback functies gebruikt.
+De data flow van de ene component naar de andere bij React Native is exact dezelfde als deze tussen twee widgets. Data vloeit van de ouder naar het kind, in de omgekeerde richting worden callback functies gebruikt.
 
-Het verschil in de opbouw van de UI tussen beide frameworks zit niet in wat de ontwikkelaar ziet of moet doen, maar gebeurd op de achtergrond. React Native componenten worden met behulp van JavaScript bruggen gemapt naar hun overeenkomstige native componenten 'at runtime'. De bron code van een Flutter applicatie wordt echter omgezet naar native machine code, waardoor de gedefinieerde widgets blijven bestaan. De widgets die de ontwikkelaar maakt krijgt de gebruiker dus ook effectief te zien. 
+Het verschil in de opbouw van de UI tussen beide frameworks zit niet in wat de ontwikkelaar ziet of moet doen, maar in wat er gebeurt op de achtergrond. React Native componenten worden met behulp van JavaScript bruggen gemapt naar hun overeenkomstige native componenten 'at runtime'. De broncode van een Flutter applicatie wordt echter omgezet naar native machine code, waardoor de gedefinieerde widgets blijven bestaan. De widgets die de ontwikkelaar maakt krijgt de gebruiker dus ook effectief te zien. 
 
-De aanpak van React Native om de componenten te mappen naar echte native componenten heeft één groot voordeel ten opzichte van de aanpak van Flutter: doordeze mapping naar native componenten wordt de weergave van deze componenten automatisch mee aangepast indien er een update van de stijl van de UI van een platform uitgebracht wordt. Bij Flutter moet er gewacht worden totdat deze nieuwe stijl is overgenomen in de widgets. 
+De aanpak van React Native om de componenten te mappen naar echte native componenten heeft één groot voordeel ten opzichte van de aanpak van Flutter: door deze mapping naar native componenten wordt de weergave van deze componenten automatisch mee aangepast indien er een update van de stijl van de UI van een platform uitgebracht wordt. Bij Flutter moet er gewacht worden totdat deze nieuwe stijl is overgenomen in de widgets. 
 
 Ook op dit punt is er geen duidelijk verschil tussen welk van de twee frameworks de betere keuze is. Dat er verschillen zijn in aanpak is duidelijk, maar geen van beide aanpakken heeft een duidelijk voordeel ten opzichte van de andere. 
 
@@ -59,7 +59,7 @@ Als laatste punt van de vergelijking werden de prestaties van beide frameworks v
 \section{Algemene conclusie}
 \label{sec:AlgemeneConclusie}
 
-In de vorige sectie werd de conclusie per onderzoeksdeel gegeven. In deze sectie worden deze afzonderlijke conclusies gecombineerd tot een algemene conclusie en een antwoord op de onderzoeksvraag.
+In de vorige sectie werd de conclusie per deel van de vergelijking gegeven. In deze sectie worden deze afzonderlijke conclusies gecombineerd tot een algemene conclusie en een antwoord op de onderzoeksvraag.
 
 Uit de conclusies in de vorige sectie blijkt duidelijk dat er geen afgetekend verschil is tussen welk framework de beste keuze is. Beide frameworks zijn ongeveer even populair (zie figuur \ref{fig:frameworkPopularity}), beschikken over dezelfde functionaliteiten en er is geen noemenswaardig verschil in prestaties tussen beide frameworks. Er kan dus besloten worden dat er op dit moment puur technologisch gezien geen beste keuze is tussen beide frameworks.
 
@@ -76,9 +76,9 @@ Tijdens het opstellen van de lijst van frameworks kwamen enkele frameworks aan b
 
 Indien dit onderzoek op een later moment nog eens opnieuw gevoerd wordt kan het ook heel goed zijn dat er nog andere frameworks zijn bijgekomen die eventueel beter zijn dan de frameworks die hier besproken werden. Het is dus belangrijk om als team zich niet vast te pinnen op deze studie, maar zelf een gelijkaardige studie uit te voeren op het moment dat er een beslissing gemaakt moet worden.
 
-Tot slot is er nog een grote mogelijkheid om de prestaties van Kotlin Multiplatform en .NET MAUI te vergelijken met deze van React Native en Flutter eens beide frameworks beschibaar zijn. 
+Tot slot is er nog een grote mogelijkheid om de prestaties van Kotlin Multiplatform en .NET MAUI te vergelijken met deze van React Native en Flutter eens beide frameworks beschikbaar zijn. 
 
-Studies zoals deze zullen echter steeds maar een bepaalde tijd relevant zijn door het snel veranderende landschap in de wereld van cross-platform applicatie ontwikkeling. Ze zijn dus alleen maar relevant indien het, zoals bij deze studie het geval was, een specifiek doel dient voor een bepaalde doelgroep.
+Studies zoals deze zullen echter steeds maar een bepaalde tijd relevant zijn door het snel veranderende landschap in de wereld van cross-platform applicatieontwikkeling. Ze zijn dus alleen maar relevant indien het, zoals bij deze studie het geval was, een specifiek doel dient voor een bepaalde doelgroep.
 
 
 

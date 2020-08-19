@@ -54,7 +54,7 @@ Net als bij de functionele eisen volgt ook hier eerst een opsomming, waarna de m
 \subsubsection{Motivatie niet-functionele eisen}
 \label{subsubsec:MotivatieNietFuntioneleEisen}
 
-Om vlot aan de slag te kunnen met het framework is het een grote meerwaarde als de programmeertaal reeds gekend is binnen het team. Op deze manier kan het team zich onmiddellijk focussen op de specifieke eigenschappen van het framework, in plaats van eerst de syntax van de taal te moeten leren. Eens de ontwikkelaars effectief een app aan het schrijven zijn is de kans zeer groot dat ze zaken tegen komen die ze niet direct zelf kunnen oplossen. In deze situaties is het noodzakelijk om te kunnen terugvallen op de officiële documentatie van het framework en op een community die klaar staat om te helpen (denk maar aan issues op GitHub, vragen op Stackoverflow, ...). Verder is een actieve community een goede indicatie dat het framework 'leeft' en dus ook updates zal ontvangen. Regelmatige updates zijn noodzakelijk voor elk softwareprogramma. Er zijn voortdurend nieuwe ontwikkelingen en nieuwe bedreigingen. Om moderne en veilige applicaties te schrijven (en deze zo te houden) is een framework met regelmatige updates dus onontbeerlijk. Vanuit datzelfde oogpunt is ook een recente stabiele versie een belangrijke eis. Tot slot is het doel van deze studie om een aanbeveling te kunnen doen van een framework dat geschikt is om de komende jaren mee aan de slag te gaan. Het is dus zeer belangrijk dat toekomstige ondersteuning gegarandeerd is. Hiermee wordt bedoeld dat er updates zullen uitgebracht blijven worden, met nieuwe functionaliteiten en de laatste nieuwe beveiligingsmethodes.
+Om vlot aan de slag te kunnen met het framework is het een grote meerwaarde als de programmeertaal reeds gekend is binnen het team. Op deze manier kan het team zich onmiddellijk focussen op de specifieke eigenschappen van het framework, in plaats van eerst de syntax van de taal te moeten leren. Eens de ontwikkelaars effectief een app aan het schrijven zijn is de kans zeer groot dat ze zaken tegenkomen die ze niet direct zelf kunnen oplossen. In deze situaties is het noodzakelijk om te kunnen terugvallen op de officiële documentatie van het framework en op een community die klaar staat om te helpen (denk maar aan issues op GitHub, vragen op Stackoverflow, ...). Verder is een actieve community een goede indicatie dat het framework 'leeft' en dus ook updates zal ontvangen. Regelmatige updates zijn noodzakelijk voor elk softwareprogramma. Er zijn voortdurend nieuwe ontwikkelingen en nieuwe bedreigingen. Om moderne en veilige applicaties te schrijven (en deze zo te houden) is een framework met regelmatige updates dus onontbeerlijk. Vanuit datzelfde oogpunt is ook een recente stabiele versie een belangrijke eis. Tot slot is het doel van deze studie om een aanbeveling te kunnen doen van een framework dat geschikt is om de komende jaren mee aan de slag te gaan. Het is dus zeer belangrijk dat toekomstige ondersteuning gegarandeerd is. Hiermee wordt bedoeld dat er updates zullen uitgebracht blijven worden, met nieuwe functionaliteiten en de laatste nieuwe beveiligingsmethodes.
 
 \section{Selectie frameworks}
 \label{sec:selectieFrameworks}
@@ -66,7 +66,7 @@ In de vorige sectie werden de eisen gedefinieerd waaraan de frameworks binnen de
 
 Om tot een lijst van de populairste frameworks te komen werd gekeken naar de resultaten van een wereldwijde ondervraging door JetBrains \autocite{Liu2020}. Met 19696 deelnemers aan deze ondervraging is dit een zeer goede weergave van de populariteit van de verschillende frameworks onder ontwikkelaars.
 
-In figuur \ref{fig:frameworkPopularity} zijn de resultaten van deze ondervraging te zien. Uit deze figuur blijkt dat er enkele zeer populaire frameworks zijn, waarvan React Native en Flutter de populairste zijn. Een interessante opmerking is dat de populariteit van Flutter sterk gestegen is (+9\%) in 2020 in vergelijking met 2019, waar die van React Native hetzelfde gebleven is (42\%). Anderzijds is de populariteit van enkele andere frameworks sterk gedaald: Cordova (-11\%), Ionic (-10\%) en Xamarin (-12\%) zijn een heel pak gebruikers kwijt geraakt. Tot slot zijn helemaal rechts enkele frameworks te zien die in 2019 door geen enkele van de ondervraagden gebruikt werden maar in 2020 wel een bepaald (weliswaar laag) percentage gebruikers weten te overtuigen. Zo duikt bijvoorbeeld Kotlin Multiplatform op in de ondervraging, met 2\% van de ondervraagden die aangeven dit te gebruiken. Ook Kivy en Corona duiken op in de resultaten van de ondervraging in 2020 met elk 1\% van de ondervraagden die aangeeft er gebruik van te maken.
+In figuur \ref{fig:frameworkPopularity} zijn de resultaten van deze ondervraging te zien. Uit deze figuur blijkt dat er enkele zeer populaire frameworks zijn, waarvan React Native en Flutter de populairste zijn. Een interessante opmerking is dat de populariteit van Flutter sterk gestegen is (+9\%) in 2020 in vergelijking met 2019, waar die van React Native hetzelfde gebleven is (42\%). Anderzijds is de populariteit van enkele andere frameworks sterk gedaald: Cordova (-11\%), Ionic (-10\%) en Xamarin (-12\%) zijn een heel pak gebruikers kwijtgeraakt. Tot slot zijn helemaal rechts enkele frameworks te zien die in 2019 door geen enkele van de ondervraagden gebruikt werden maar in 2020 wel een bepaald (weliswaar laag) percentage gebruikers weten te overtuigen. Zo duikt bijvoorbeeld Kotlin Multiplatform op in de ondervraging, met 2\% van de ondervraagden die aangeven dit te gebruiken. Ook Kivy en Corona duiken op in de resultaten van de ondervraging in 2020 met elk 1\% van de ondervraagden die aangeeft er gebruik van te maken.
 
 Alle frameworks die aan bod komen in deze ondervraging zullen in de volgende sectie kort besproken worden en vervolgens afgetoetst worden tegen de gestelde eisen (behalve Apache Flex en Dojo, gezien de reeds beperkte populariteit in 2019 en de daling in populariteit in 2020). Het is namelijk niet automatisch zo dat het (op dit moment) populairste framework ook meteen de beste keuze is voor de komende jaren.
 
@@ -96,7 +96,7 @@ Flutter is een software development kit (SDK) ontwikkeld door Google in 2017. He
 \subsubsection{Cordova}
 \label{subsubsec:Cordova}
 
-Cordova is een framework dat ontwikkeld is door Adobe en bestaat al sinds 2011. Het werd in 2013 overgedragen aan Apache om het open source karakter van het framework te kunnen garanderen . Het framework kan gebruikt worden voor het ontwikkelen van cross-platform mobiele applicaties. De talen die gebruikt worden zijn HTML5, CSS3 en Javascript \autocite{Apache2020}. Dit zijn de standaard talen voor de ontwikkeling van webapplicaties, een ontwikkelaar moet dus geen nieuwe taal leren om met Cordova aan de slag te gaan. Applicaties worden uitgevoerd binnen specifieke wrappers per platform en maken gebruik van de native API's om de specifieke hardware componenten van een systeem te gebruiken.
+Cordova is een framework dat ontwikkeld is door Adobe en bestaat al sinds 2011. Het werd in 2013 overgedragen aan Apache om het open source karakter van het framework te kunnen garanderen. Het framework kan gebruikt worden voor het ontwikkelen van cross-platform mobiele applicaties. De talen die gebruikt worden zijn HTML5, CSS3 en Javascript \autocite{Apache2020}. Dit zijn de standaard talen voor de ontwikkeling van webapplicaties, een ontwikkelaar moet dus geen nieuwe taal leren om met Cordova aan de slag te gaan. Applicaties worden uitgevoerd binnen specifieke wrappers per platform en maken gebruik van de native API's om de specifieke hardware componenten van een systeem te gebruiken.
 
 \subsubsection{Ionic}
 \label{subsubsec:Ionic}
@@ -106,7 +106,7 @@ Ionic is een UI toolkit voor het maken van mobiele webapplicaties. Het is ontwik
 \subsubsection{Xamarin}
 \label{subsubsec:Xamarin}
 
-Xamarin is een uitbreiding van het .NET platform van Windows. Het levert een framework dat toegang geeft tot de native eigenschappen van een platform, libraries om de native API's te kunnen gebruiken en een eigen markup taal (XAML) om de gebruikersinterface te beschrijven \autocite{Microsoft2020}. Het grote voordeel van het feit dat Xamarin .NET uitbreid is dat alle mogelijkheden en ondersteuning van .NET ook beschikbaar is voor Xamarin. Ontwikkelaars die reeds gewoon zijn om met .NET te werken kunnen dus onmiddellijk aan de slag met het ontwikkelen van mobiele applicaties met dit framework.
+Xamarin is een uitbreiding van het .NET platform van Windows. Het levert een framework dat toegang geeft tot de native eigenschappen van een platform, libraries om de native API's te kunnen gebruiken en een eigen markup taal (XAML) om de gebruikersinterface te beschrijven \autocite{Microsoft2020}. Het grote voordeel van het feit dat Xamarin .NET uitbreid is dat alle mogelijkheden en ondersteuning van .NET ook beschikbaar is voor Xamarin. Ontwikkelaars die al gewoon zijn om met .NET te werken kunnen dus onmiddellijk aan de slag met het ontwikkelen van mobiele applicaties met dit framework.
 
 \subsubsection{Unity}
 \label{subsubsec:Unity}
@@ -126,7 +126,7 @@ NativeScript is een open source framework voor het bouwen van mobiele applicatie
 \subsubsection{Kotlin Multiplatform}
 \label{subsubsec:Kotlin}
 
-Kotlin is een open source SDK die de ontwikkelaar toelaat om cross-platform applicaties te schrijven en uitgebracht is door JetBrains. Door het feit dat dit een SDK is kan de ontwikkelaar delen van de applicatie in Kotlin schrijven, zonder dat de gehele applicatie opnieuw geschreven hoeft te worden (zoals wel het geval is bij een framework). Verder laat Kotlin Multiplatform ook toe om toch platform specifieke code te schrijven indien er zaken zijn die niet cross-platform opgelost kunnen worden. Door deze mogelijkheid kan de ontwikkelaar ook onmiddellijk inspringen op nieuwe eigenschappen van een platform: van zodra een eigenschap beschikbaar is kan deze ook gebruikt worden in de applicatie \autocite{JetBrains2020}. De mogelijkheid voor het schrijven van cross-platform applicaties met Kotlin is wel nog een experimentele functionaliteit, die beschikbaar is sinds versie 1.3 \autocite{Belov2018}.
+Kotlin is een open source SDK die de ontwikkelaar toelaat om cross-platform applicaties te schrijven en uitgebracht is door JetBrains. Door het feit dat dit een SDK is kan de ontwikkelaar delen van de applicatie in Kotlin schrijven, zonder dat de gehele applicatie opnieuw geschreven hoeft te worden (zoals wel het geval is bij een framework). Verder laat Kotlin Multiplatform ook toe om toch platform specifieke code te schrijven als er zaken zijn die niet cross-platform opgelost kunnen worden. Door deze mogelijkheid kan de ontwikkelaar ook onmiddellijk inspringen op nieuwe eigenschappen van een platform: van zodra een eigenschap beschikbaar is kan deze ook gebruikt worden in de applicatie \autocite{JetBrains2020}. De mogelijkheid voor het schrijven van cross-platform applicaties met Kotlin is wel nog een experimentele functionaliteit, die beschikbaar is sinds versie 1.3 \autocite{Belov2018}.
 
 
 \subsubsection{Kivy}
@@ -137,12 +137,12 @@ Kivy is een open source grafische gebruikersinterface library die het mogelijk m
 \subsubsection{Corona}
 \label{subsubsec:Corona}
 
-Corona is een cross-platform framework dat ideaal is voor het snelle ontwikkelen van mobiele applicaties en games. Het is gebaseerd op Lua, een open source scripting taal. Er zijn vele plug-ins beschikbaar en er is toegang tot de native API's indien er geen plug-in beschikbaar is voor een bepaalde eigenschap. Het framework beschikt over een simulator die de ontwikkelaar toelaat om aanpassingen direct te kunnen zien \autocite{Coronalabs2020}. Een nadeel is wel dat het bedrijf achter Corona niet meer bestaat sinds 1/5/2020. De software gaat verder als een open source project, maar het toekomstige bestaan en updates zijn dus niet langer gegarandeerd \autocite{Shcherban2020}.
+Corona is een cross-platform framework dat ideaal is voor het snelle ontwikkelen van mobiele applicaties en games. Het is gebaseerd op Lua, een open source scripting taal. Er zijn vele plug-ins beschikbaar en er is toegang tot de native API's als er geen plug-in beschikbaar is voor een bepaalde eigenschap. Het framework beschikt over een simulator die de ontwikkelaar toelaat om aanpassingen direct te kunnen zien \autocite{Coronalabs2020}. Een nadeel is wel dat het bedrijf achter Corona niet meer bestaat sinds 1/5/2020. De software gaat verder als een open source project, maar het toekomstige bestaan en updates zijn dus niet langer gegarandeerd \autocite{Shcherban2020}.
 
 \subsubsection{.NET MAUI}
 \label{subsubsec:.NETMAUI}
 
-.NET MAUI (Multi-platform App UI) is een cross-platform framework dat op 19/5/2020 uitgebracht werd door Microsoft \autocite{Hunter2020}. Op de datum van schrijven van deze studie is dit dus nog een zeer recent framework, dat nog niet veel bekendheid en gebruikers heeft. Het is een verdere evolutie van Xamarin, een ander cross-platform framework van Microsoft. Microsoft heeft als doel om met .NET MAUI een framework aan te bieden dat niet enkel dient om applicaties te schrijven voor smartphones, maar ook voor computers, tablets en andere apparaten waarop applicaties geïnstalleerd kunnen worden. Zoals de naam al doet vermoeden steunt het framework op .NET. Ontwikkelaars die reeds ervaring hebben met dit framework (en C\#, de taal die gebruikt wordt bij .NET) hoeven dus geen nieuwe taal of nieuw framework te leren. De effectieve release van een stabiele versie van het framework is gepland samen met het uitbrengen van .NET 6 in november 2021. Ondertussen kunnen ontwikkelaars wel previews verwachten van het framework, waarvan de eerste zal uitkomen op het einde van 2020 \autocite{Suarez2020}. Het is de bedoeling van Microsoft dat .NET MAUI de opvolger van Xamarin wordt. Xamarin zal wel nog onderhouden worden, maar alle nieuwe ontwikkelingen zullen in .NET MAUI komen.
+.NET MAUI (Multi-platform App UI) is een cross-platform framework dat op 19/5/2020 uitgebracht werd door Microsoft \autocite{Hunter2020}. Op de datum van schrijven van deze studie is dit dus nog een zeer recent framework, dat nog niet veel bekendheid en gebruikers heeft. Het is een verdere evolutie van Xamarin, een ander cross-platform framework van Microsoft. Microsoft heeft als doel om met .NET MAUI een framework aan te bieden dat niet enkel dient om applicaties te schrijven voor smartphones, maar ook voor computers, tablets en andere apparaten waarop applicaties geïnstalleerd kunnen worden. Zoals de naam al doet vermoeden steunt het framework op .NET. Ontwikkelaars die al ervaring hebben met dit framework (en C\#, de taal die gebruikt wordt bij .NET) hoeven dus geen nieuwe taal of nieuw framework te leren. De effectieve release van een stabiele versie van het framework is gepland samen met het uitbrengen van .NET 6 in november 2021. Ondertussen kunnen ontwikkelaars wel previews verwachten van het framework, waarvan de eerste zal uitkomen op het einde van 2020 \autocite{Suarez2020}. Het is de bedoeling van Microsoft dat .NET MAUI de opvolger van Xamarin wordt. Xamarin zal wel nog onderhouden worden, maar alle nieuwe ontwikkelingen zullen in .NET MAUI komen.
 
 \section{Aftoetsen eisen framework}
 \label{sec:aftoetsenEisen}
@@ -168,7 +168,7 @@ De niet-functionele eisen voor het framework zijn te vinden in sectie \ref{subse
 \subsubsection{Cordova}
 \label{subsubsec:CordovaEisen}
 
-Zoals in tabel \ref{tab:nietFunctioneleEisen} te zien is voldoet Cordova aan alle niet-functionele eisen, behalve aan de populariteitseis. In figuur \ref{fig:frameworkPopularity} is te zien dat de populariteit van het framework sterk gedaald is. Aangezien het framework  de komende jaren gebruikt zal worden is het ook belangrijk dat het framework populair blijft. Een hoge populariteit geeft namelijk meer opties om te gaan gebruiken (denk aan libraries, oplossingen voor specifieke problemen, ...) en is een goede indicatie of het framework zich kan weren tegen andere frameworks. Cordova verliest vele gebruikers aan andere frameworks, waaruit afgeleid kan worden dat andere frameworks een betere optie zijn om te gebruiken.
+Zoals in tabel \ref{tab:nietFunctioneleEisen} te zien is voldoet Cordova aan alle niet-functionele eisen, behalve aan de populariteitseis. In figuur \ref{fig:frameworkPopularity} is te zien dat de populariteit van het framework sterk gedaald is. Aangezien het framework de komende jaren gebruikt zal worden is het ook belangrijk dat het framework populair blijft. Een hoge populariteit geeft namelijk meer opties om te gaan gebruiken (denk aan libraries, oplossingen voor specifieke problemen, ...) en is een goede indicatie of het framework zich kan weren tegen andere frameworks. Cordova verliest vele gebruikers aan andere frameworks, waaruit afgeleid kan worden dat andere frameworks een betere optie zijn om te gebruiken.
 
 \subsubsection{Ionic}
 \label{subsubsec:IonicEisen}
@@ -193,7 +193,7 @@ Kotlin is een framework dat oorspronkelijk gemaakt is voor het ontwikkelen van A
 \subsubsection{Kivy}
 \label{subsubsec:KivyEisen}
 
-Kivy is een library die al een hele tijd bestaat, en toch weet deze slechts een zeer klein deel van de ontwikkelaars te overtuigen om het te gebruiken. Verder is ook de documentatie eerder beperkt. Het is dus geen goede optie om de komende jaren hier op in te zetten.
+Kivy is een library die al een hele tijd bestaat, en toch weet deze slechts een zeer klein deel van de ontwikkelaars te overtuigen om het te gebruiken. Verder is ook de documentatie eerder beperkt. Het is dus geen goede optie om de komende jaren hierop in te zetten.
 
 \subsubsection{Corona}
 \label{subsubsec:CoronaEisen}
@@ -297,7 +297,7 @@ opnieuw builden. Voor zowel het ontwikkelen van de UI als het oplossen van
 problemen is dit een zeer krachtige eigenschap die de ontwikkelingstijd drastisch
 verlaagd. De werkwijze steunt op het bestaan van de Dart Virtual Machine. Dit is
 een VM waar de Dart code in draait en die er voor zorgt dat de code wordt
-omgezet naar de gewenste taal (machine code of JavaScript). De bron code
+omgezet naar de gewenste taal (machine code of JavaScript). De broncode
 bestanden die geüpdatet zijn worden in deze VM geïnjecteerd en vervangen de
 oudere versie van deze bestanden. Vervolgens wordt de hele widget tree opnieuw
 opgebouwd, waardoor de aanpassingen getoond worden zonder dat de applicatie
@@ -310,7 +310,7 @@ Zoals in de vorige secties duidelijk werd steunen de twee frameworks op een
 andere taal. In deze sectie worden de verschillen en gelijkenissen tussen beide
 talen besproken.
 
-Eerst en vooral moet er op gemerkt worden dat beide talen dezelfde achtergrond
+Eerst en vooral moet er opgemerkt worden dat beide talen dezelfde achtergrond
 hebben. Ze zijn beide gestart als een taal voor web omgevingen en zijn daarna
 verder geëvolueerd om er meerdere soorten applicaties mee te kunnen schrijven.
 Zo worden ze nu beide gebruikt voor de ontwikkeling van cross-platform
@@ -458,7 +458,7 @@ van een map te zien die de naam van een route bevat en de builder die de route
 effectief zal tonen op het scherm. In figuur \ref{fig:useNamedRoutesFlutter} is
 te zien hoe de route effectief getoond kan worden. Uit de naam van de methode
 wordt duidelijk dat ook deze methode gebruik maakt van een stack voor de
-navigatie. De nieuwe route wordt bovenop de stack geplaatst.
+navigatie. De nieuwe route wordt boven op de stack geplaatst.
 
 Beide methodes maken dus gebruik van dezelfde stack en kunnen dus ook door
 elkaar gebruikt worden. Dit is een logische aanpak, aangezien een logische
@@ -466,7 +466,7 @@ volgorde in een applicatie absoluut noodzakelijk is. Indien een gebruiker terug
 wil gaan is het alleen logisch om naar de vorige stap te gaan, ongeacht welke
 methode gebruikt werd om naar de huidige pagina te navigeren. 
 
-Verder is het in Flutter mogelijk om een route een waarde te laten terug geven.
+Verder is het in Flutter mogelijk om een route een waarde te laten teruggeven.
 Dit is bijvoorbeeld handig indien de gebruiker op oké moet klikken alvorens er
 naar het volgende scherm gegaan kan worden. Indien de gebruiker uit dit scherm
 gaat door de terug knop van het systeem te gebruiken is de waarde die
@@ -498,7 +498,7 @@ naar toe te kunnen navigeren, waar het bij Flutter mogelijk is om op voorhand
 een vaste volgorde te definiëren.
 
 In het gevoel voor de gebruiker is er echter geen verschil tussen beide
-frameworks. Beide frameworks leveren een navigatie af die overeen komt met de
+frameworks. Beide frameworks leveren een navigatie af die overeenkomt met de
 native navigatie. Verder kan de ontwikkelaar bij beide de overgang tussen de
 verschillende pagina's aanpassen om te voldoen aan de uitstraling die de app
 wilt geven. 
@@ -637,7 +637,7 @@ Hoewel het hoofddoel van React Native is om applicaties te kunnen ontwikkelen vo
 
 \subsubsection{Flutter}
 
-Op het moment van schrijven van deze studie is enkel de ontwikkeling voor Android en iOS beschikbaar in de stabiele versie van Flutter. Flutter gebruiken om een web omgeving te maken zit in de bèta test fase. Ook de ondersteuning voor desktop wordt aan gewerkt, met de ondersteuning van iOS in alpha. De ondersteuning voor Linux en Windows zit op het moment van schrijven nog in de ontwikkelingsfase \autocite{FlutterPlatformSupport}.
+Op het moment van schrijven van deze studie is enkel de ontwikkeling voor Android en iOS beschikbaar in de stabiele versie van Flutter. Flutter gebruiken om een web omgeving te maken zit in de bèta testfase. Ook de ondersteuning voor desktop wordt aan gewerkt, met de ondersteuning van iOS in alpha. De ondersteuning voor Linux en Windows zit op het moment van schrijven nog in de ontwikkelingsfase \autocite{FlutterPlatformSupport}.
 
 \subsubsection{Vergelijking ondersteuning andere platformen}
 
@@ -650,7 +650,7 @@ Aangezien een keuze tussen twee frameworks niet enkel beïnvloed wordt door de e
 
 In de studie van \textcite{Fentaw2020} werden twee apps gemaakt, één met React Native en één met Flutter. In beide gevallen werd de applicatie getest op zowel een Android als op een iOS-toestel. De resultaten van deze studie worden in de volgende paragrafen overlopen, zodanig dat een degelijk begrip van de betekenis van deze resultaten bekomen kan worden.
 
-Bij het testen van de applicaties op het iOS-toestel bleek dat de applicatie die met Flutter geschreven werd een heel stuk beter presteerde op het vlak van CPU-gebruik dan de React Native applicatie. De verklaring die hiervoor gegeven wordt is dat React Native gebruikt maakt van JavaScript bruggen (softwarematige verbindingen tussen de React Native componenten en de native componenten) waar Flutter rechtstreeks kan communiceren met native modules omdat de bron code wordt omgezet naar native machine code tijdens het compilen. Op het vlak van geheugengebruik scoort de React Native applicatie echter beduidend beter. Hier wordt door de auteur de kanttekening bij geplaatst dat er bij de React Native applicatie gebruik gemaakt werd van Redux, terwijl er bij de Flutter applicatie een eenvoudig Provider package gebruikt werd. Op het vlak van GPU gebruik scoren beide frameworks ongeveer gelijk. Twee van de vier testsituaties waren gelijk, en elk framework was in één testsituatie de betere. 
+Bij het testen van de applicaties op het iOS-toestel bleek dat de applicatie die met Flutter geschreven werd een heel stuk beter presteerde op het vlak van CPU-gebruik dan de React Native applicatie. De verklaring die hiervoor gegeven wordt is dat React Native gebruikt maakt van JavaScript bruggen (softwarematige verbindingen tussen de React Native componenten en de native componenten) waar Flutter rechtstreeks kan communiceren met native modules omdat de broncode wordt omgezet naar native machine code tijdens het compilen. Op het vlak van geheugengebruik scoort de React Native applicatie echter beduidend beter. Hier wordt door de auteur de kanttekening bij geplaatst dat er bij de React Native applicatie gebruik gemaakt werd van Redux, terwijl er bij de Flutter applicatie een eenvoudig Provider package gebruikt werd. Op het vlak van GPU-gebruik scoren beide frameworks ongeveer gelijk. Twee van de vier testsituaties waren gelijk, en elk framework was in één testsituatie de betere. 
 
 
 Het testen van de applicaties op een Androidtoestel leverde echter andere resultaten op dan het testen op een iOS-toestel. Bij de CPU test waren beide frameworks nu twee van de vier keer de betere en kon er dus beslist worden dat beide frameworks dezelfde efficiëntie van CPU-gebruik hadden. Ook voor de geheugentest scoorden beide frameworks twee keer als de beste en kan er dus besloten worden dat ze allebei dezelfde efficiënctie hebben op het vlak van geheugengebruik. Als verklaring voor de verschillen in de prestaties in de ene testsituatie vergeleken met de andere wordt gewezen naar het gebruik van de externe libraries voor het uitvoeren van bepaalde functionaliteiten. Ook de taal waarin de applicatie geschreven wordt speelt hier een rol, aangezien bij het filteren van een lijst de React Native meer geheugen verbruikt en hiervoor als verklaring gegeven wordt dat deze functionaliteit in JavaScript langer duurt dan in Dart. Voor het Android toestel kon geen vergelijking van de GPU-prestaties gemaakt worden aangezien de GPU rendering tool van Android toestellen niet compatibel is met Flutter applicaties.
