@@ -564,10 +564,39 @@ In de vorige secties werd duidelijk dat beide frameworks de gebruiker in staat s
 \subsection{Opbouw UI}
 \label{subsec:opbouwUI}
 
-Hte belangrijkste deel van een applicatie voor een gebruiker is de UI. Deze moet er dan ook mooi uitzien, gebruiksvriendelijk zijn en goede prestaties kunnen leveren. Voor een cross-platform framework is het dus uiterst belangrijk om een goeide UI te kunnen bouwen. In deze sectie wordt gekeken hoe zowel React Native als Flutter dit aanpakken en de beide methodes worden met elkaar vergeleken.
+Hzt belangrijkste deel van een applicatie voor een gebruiker is de UI. Deze moet er dan ook mooi uitzien, gebruiksvriendelijk zijn en goede prestaties kunnen leveren. Voor een cross-platform framework is het dus uiterst belangrijk om een goeide UI te kunnen bouwen. In deze sectie wordt gekeken hoe zowel React Native als Flutter dit aanpakken en de beide methodes worden met elkaar vergeleken.
 
 \subsubsection{React Native}
 \label{subsubsec:opbouwUIReactNative}
+
+De opbouw van de UI van een applicatie gebeurt zowel voor Android als voor iOS aan de hand van views, zoals te zien is in figuur \ref{fig:opbouwUIAndroidiOS}. Door meerdere views samen te combineren wordt een interactieve UI bekomen die de gebruiker in staat stelt de applicatie te gebruiken. 
+
+
+
+React Native stelt de ontwikkelaar in staat om deze views te gaan aanspreken aan de hand van React componenten. Dit is een eigen voorstelling van de overeenkomstige platform specifieke views, die 'at runtime' gecreëerd worden aan de hand van de React componenten. Het grote voordeel van deze manier van werken is dat de ontwikkelaar niet hoeft te weten hoe een bepaalde view noemt op het specifieke platform, weten hoe de component in React Native noemt is voldoende. 
+
+In figuur \ref{fig:reactComponent} is de opbouw van een eenvoudige React component te zien. Deze component zorgt er voor dat de tekst 'Hello, I am your cat!' op het scherm verschijnt. In het begin van de component worden React en de Text-component van React Native geïmporteerd. Vervolgens wordt er een functiecomponent gemaakt, waarin de Text-component wordt gebruikt. De tekst die getoond moet worden wordt megegeven aan deze component en de component wordt geëxporteerd. Deze component kan nu gebruikt worden om op gelijk welk scherm binnen de applicatie en op eender welk platform de tekst 'Hello, I am your cat!' te tonen.
+
+
+React Native beschikt over vele core componenten. Dit zijn componenten die vaak gebruikt worden voor het maken van een applicatie en dus standaard tot React Native behoren. Verder laat React Native echter de ruimte om zelf native componenten te gaan definiëren. Door de community zijn er al vele native componenten geschreven die door een ontwikkelaar vrij gebruikt kunnen worden. Indien er echter toch een bepaalde component is die nog geen overeenkomstige React component heeft kan de ontwikkelaar deze zelf ontwikkelen. Van zodra nieuwe eigenschappen uitkomen voor een bepaald platform kan de ontwikkelaar dus kiezen: ofwel wachten tot iemand van de communite een React component schrijft voor deze nieuwe eigenschap of zelf één schrijven. Indien de ontwikkelaar het echt nodig heeft is er dus geen limitatie en kan de nieuwe eigenschap gebruikt worden (weliswaar met de nodige extra inspanning).
+
+\begin{figure}
+    \includegraphics[width=\linewidth]{UIBuildingBlocksAndroidAndiOs.png}
+    \caption{Opbouw van de UI in native Android en iOS. Bron:
+        \textcite{ReactNative.dev2020}}
+    \label{fig:opbouwUIAndroidiOS}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=0.7\linewidth]{ExampleReactComponent.png}
+    \caption{Eenvoudige React component. Bron:
+        \textcite{ReactNative.dev2020}}
+    \label{fig:reactComponent}
+\end{figure}
+
+\subsubsection{Flutter}
+\label{subsubsec:opbouwUIFlutter}
+
 
 
 

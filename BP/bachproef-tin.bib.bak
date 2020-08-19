@@ -194,6 +194,15 @@
   editor = {Statista},
   date   = {2020-06-11},
   title  = {Most used programming languages among developers worldwide, as of early 2020},
+  url    = {https://www.statista.com/statistics/793628/},
+}
+
+@Online{Facebook2020b,
+  author = {Facebook},
+  editor = {Facebook},
+  date   = {2020},
+  title  = {react Native: Core Components and Native Components},
+  url    = {https://reactnative.dev/docs/intro-react-native-components},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
