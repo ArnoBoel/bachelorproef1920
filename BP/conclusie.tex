@@ -15,3 +15,47 @@
 %onderzoek?
 
 
+In het vorige hoofstuk werd vertrokken van een grote lijst (sectie \ref{subsec:lijstPopulairsteFrameworks} met cross-platform frameworks die in 2019 en 2020 gebruikt werden door ontwikkelaars van overal ter wereld. Al de frameworks (op 2 na die duidelijk niet voldoen aan de eis om in de toekomst een goede keuze te zijn) die voorkwamen in de lijst werden kort besproken (sectie \ref{subsec:achtergrondFrameworks}. Vervolgens werden deze frameworks afgetoetst tegen de eisen die gesteld werden aan het framework in sectie \ref{sec:aftoetsenEisen}. Na het aftoetsen van de frameworks tegenover de eisen waren er slechts twee frameworks die op dit moment voldeden aan alle eisen: React Native en Flutter.
+
+\subsection{Conclusies vergelijkingen React Native en Flutter}
+\label{subsec:conclusieVgl}
+
+Tijdens het vergelijken van React Native en Flutter werd het duidelijk dat beide frameworks enkele verschillen vertonen maar dat de concepten waarop het famework gebaseerd is grotendeels gelijk zijn. Zo beschikken beide frameworks over een manier om aan hot reloading te doen, hebben ze beiden de mogelijkheid om toegang te verkrijgen tot de native API's en is er zelfs geen noemenswaardig verschil te merken in de prestaties van een app die geschreven is met React Native of één met Flutter. In de volgende paragrafen worden de conclusies van de verschillende onderzoekspunten gegeven. Vervolgens volgt een algemene conclusie welk framework nu uiteindelijk de beste keuze is, en daarmee een antwoord op de onderzoeksvraag.
+
+\subsubsection{Taal framework}
+
+Een eerste punt van vergelijking was de taal van het framework. Uit deze vergelijking kan besloten worden dat beide frameworks gebaseerd zijn op een taal die veel mogelijkheden bezit. React Native is gebaseerd op JavaScript, dat al een pak langer bestaat dan Dart(de taal van Flutter). Hierdoor is er veel meer documentatie beschikbaar, zijn er meer externe libraries van de community om vaste taken over te nemen en zijn er meer oplossingen beschikbaar voor veel voorkomende problemen. Op dit moment is React Native dus een betere optie voor de meeste ontwikkelaars, zeker indien er reeds een basiskennis React aanwezig is. Dart heeft echter als voordeel dat de bron code gecompiled kan worden naar native machine code, wat een groot voordeel kan opleveren in sommige gevallen. Indien de taal dus aan maturiteit en populariteit wint in de komende jaren zou de conclusie van het onderzoek op dit punt dus wel in het voordeel van Dart en dus Flutter kunnen overslaan.
+
+\subsection{Navigatie binnen de applicatie}
+
+Op het vlak van navigatie waren er enkele verschillen in de technologie voor de ontwikkelaar. Zo wordt er bij React Native een beroep gedaan op een library van de community, waar dit bij Flutter standaard in het framework aanwezig is. Voor de gebruiker is er echter geen enkel verschil waarneembaar en werkt de navigatie van de applicatie net zoals deze van een native applicatie. Op dit gebied is er dus geen onderscheid te maken tussen beide frameworks.
+
+\subsection{Toegang native API's}
+
+Een belangrijk punt voor een framework is dat het de ontwikkelaar toegang geeft tot de native API's indien dit nodig is. Zowel React Native als Flutter zijn hiertoe in staat. Kennis van native code is hier wel van essentieel belang om gebruik te kunnen maken van deze eigenschap. Ook hier is echter geen onderscheid merkbaar tussen beide frameworks.
+
+\subsection{Opbouw UI}
+
+Als er naar de opbouw van de UI gekeken wordt is er wel een groot verschil tussen beide frameworks. Hoewel de opbouw van de UI met Flutter gebaseerd is op bepaalde concepten van React is het uiteindelijke resultaat een groot verschil met React Native.
+
+De twee frameworks maken allebei gebruik van bouwstenen, die door ze te combineren de UI voorstellen. Bij React Native zijn dit React componenten, bij Flutter zijn het widgets. Beiden kunnen volledig gestijld worden naar de smaak van de ontwikkelaar. 
+
+De data flow van de ene component naar de andere bij React Native is exact dezelde als deze tussen twee widgets. Data vloeit van de ouder naar het kind, in de omgekeerde richting worden callback functies gebruikt.
+
+Het verschil in de opbouw van de UI tussen beide frameworks zit niet in wat de ontwikkelaar ziet of moet doen, maar gebeurd op de achtergrond. React Native componenten worden met behulp van JavaScript bruggen gemapt naar hun overeenkomstige native componenten 'at runtime'. De bron code van een Flutter applicatie wordt echter omgezet naar native machine code, waardoor de gedefinieerde widgets blijven bestaan. De widgets die de ontwikkelaar maakt krijgt de gebruiker dus ook effectief te zien. 
+
+De aanpak van React Native om de componenten te mappen naar echte native componenten heeft één groot voordeel ten opzichte van de aanpak van Flutter: doordeze mapping naar native componenten wordt de weergave van deze componenten automatisch mee aangepast indien er een update van de stijl van de UI van een platform uitgebracht wordt. Bij Flutter moet er gewacht worden totdat deze nieuwe stijl is overgenomen in de widgets. 
+
+Ook op dit punt is er geen duidelijk verschil tussen welk van de twee frameworks de betere keuze is. Dat er verschillen zijn in aanpak is duidelijk, maar geen van beide aanpakken heeft een duidelijk voordeel ten opzichte van de andere. 
+
+\subsubsection{Prestaties}
+
+Als laatste punt van de vergelijking werden de prestaties van beide frameworks vergeleken. Voor deze vergelijking werd een beroep gedaan op de studie van \textcite{Fentaw2020}. Er werd geen eigen prestatiestudie gedaan omdat dit buiten de opzet van deze studie lag. Uit deze studie kon geconcludeerd worden dat er op bepaalde taken door het eerste framework beter gepresteerd wordt, op andere taken scoort het tweede framework beter en op andere taken scoren ze gelijkaardig. Over de algemene lijn gezien is er dus geen noemenswaardig verschil tussen beide frameworks op het vlak van prestaties.
+
+\subsection{Algemene conclusie}
+\label{sec:AlgemeneConclusie}
+
+
+
+
+
