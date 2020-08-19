@@ -197,12 +197,19 @@
   url    = {https://www.statista.com/statistics/793628/},
 }
 
-@Online{Facebook2020b,
-  author = {Facebook},
+@Online{ReactNative.dev2020,
+  author = {ReactNative.dev},
   editor = {Facebook},
   date   = {2020},
   title  = {react Native: Core Components and Native Components},
   url    = {https://reactnative.dev/docs/intro-react-native-components},
+}
+
+@Online{IntroductionToWidgets,
+  author = {Flutter.dev},
+  date   = {2020},
+  title  = {Introduction to widgets},
+  url    = {https://flutter.dev/docs/development/ui/widgets-intro},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

@@ -564,13 +564,19 @@ In de vorige secties werd duidelijk dat beide frameworks de gebruiker in staat s
 \subsection{Opbouw UI}
 \label{subsec:opbouwUI}
 
-Hzt belangrijkste deel van een applicatie voor een gebruiker is de UI. Deze moet er dan ook mooi uitzien, gebruiksvriendelijk zijn en goede prestaties kunnen leveren. Voor een cross-platform framework is het dus uiterst belangrijk om een goeide UI te kunnen bouwen. In deze sectie wordt gekeken hoe zowel React Native als Flutter dit aanpakken en de beide methodes worden met elkaar vergeleken.
+Het belangrijkste deel van een applicatie voor een gebruiker is de UI. Deze moet er dan ook mooi uitzien, gebruiksvriendelijk zijn en goede prestaties kunnen leveren. Voor een cross-platform framework is het dus uiterst belangrijk om een goeide UI te kunnen bouwen. 
+
+De opbouw van de UI van een applicatie gebeurt zowel voor Android als voor iOS aan de hand van views, zoals te zien is in figuur \ref{fig:opbouwUIAndroidiOS}. Door meerdere views samen te combineren wordt een interactieve UI bekomen die de gebruiker in staat stelt de applicatie te gebruiken. In deze sectie wordt gekeken hoe zowel React Native als Flutter het gebruik van deze native views aanpakken en beide methodes worden met elkaar vergeleken.
+
+\begin{figure}
+\includegraphics[width=\linewidth]{UIBuildingBlocksAndroidAndiOs.png}
+\caption{Opbouw van de UI in native Android en iOS. Bron:
+    \textcite{ReactNative.dev2020}}
+\label{fig:opbouwUIAndroidiOS}
+\end{figure}
 
 \subsubsection{React Native}
-\label{subsubsec:opbouwUIReactNative}
-
-De opbouw van de UI van een applicatie gebeurt zowel voor Android als voor iOS aan de hand van views, zoals te zien is in figuur \ref{fig:opbouwUIAndroidiOS}. Door meerdere views samen te combineren wordt een interactieve UI bekomen die de gebruiker in staat stelt de applicatie te gebruiken. 
-
+\label{subsubsec:opbouwUIReactNative} 
 
 
 React Native stelt de ontwikkelaar in staat om deze views te gaan aanspreken aan de hand van React componenten. Dit is een eigen voorstelling van de overeenkomstige platform specifieke views, die 'at runtime' gecreëerd worden aan de hand van de React componenten. Het grote voordeel van deze manier van werken is dat de ontwikkelaar niet hoeft te weten hoe een bepaalde view noemt op het specifieke platform, weten hoe de component in React Native noemt is voldoende. 
@@ -578,14 +584,7 @@ React Native stelt de ontwikkelaar in staat om deze views te gaan aanspreken aan
 In figuur \ref{fig:reactComponent} is de opbouw van een eenvoudige React component te zien. Deze component zorgt er voor dat de tekst 'Hello, I am your cat!' op het scherm verschijnt. In het begin van de component worden React en de Text-component van React Native geïmporteerd. Vervolgens wordt er een functiecomponent gemaakt, waarin de Text-component wordt gebruikt. De tekst die getoond moet worden wordt megegeven aan deze component en de component wordt geëxporteerd. Deze component kan nu gebruikt worden om op gelijk welk scherm binnen de applicatie en op eender welk platform de tekst 'Hello, I am your cat!' te tonen.
 
 
-React Native beschikt over vele core componenten. Dit zijn componenten die vaak gebruikt worden voor het maken van een applicatie en dus standaard tot React Native behoren. Verder laat React Native echter de ruimte om zelf native componenten te gaan definiëren. Door de community zijn er al vele native componenten geschreven die door een ontwikkelaar vrij gebruikt kunnen worden. Indien er echter toch een bepaalde component is die nog geen overeenkomstige React component heeft kan de ontwikkelaar deze zelf ontwikkelen. Van zodra nieuwe eigenschappen uitkomen voor een bepaald platform kan de ontwikkelaar dus kiezen: ofwel wachten tot iemand van de communite een React component schrijft voor deze nieuwe eigenschap of zelf één schrijven. Indien de ontwikkelaar het echt nodig heeft is er dus geen limitatie en kan de nieuwe eigenschap gebruikt worden (weliswaar met de nodige extra inspanning).
-
-\begin{figure}
-    \includegraphics[width=\linewidth]{UIBuildingBlocksAndroidAndiOs.png}
-    \caption{Opbouw van de UI in native Android en iOS. Bron:
-        \textcite{ReactNative.dev2020}}
-    \label{fig:opbouwUIAndroidiOS}
-\end{figure}
+React Native beschikt over vele core componenten. Dit zijn componenten die vaak gebruikt worden voor het maken van een applicatie en dus standaard tot React Native behoren. Verder laat React Native echter de ruimte om zelf native componenten te gaan definiëren. Door de community zijn er al vele native componenten geschreven die door een ontwikkelaar vrij gebruikt kunnen worden. Indien er echter toch een bepaalde component is die nog geen overeenkomstige React component heeft kan de ontwikkelaar deze zelf ontwikkelen. Van zodra nieuwe eigenschappen uitkomen voor een bepaald platform kan de ontwikkelaar dus kiezen: ofwel wachten tot iemand van de community een React component schrijft voor deze nieuwe eigenschap of zelf één schrijven. Indien de ontwikkelaar het echt nodig heeft is er dus geen limitatie en kan de nieuwe eigenschap gebruikt worden (weliswaar met de nodige extra inspanning).
 
 \begin{figure}
     \includegraphics[width=0.7\linewidth]{ExampleReactComponent.png}
@@ -597,6 +596,30 @@ React Native beschikt over vele core componenten. Dit zijn componenten die vaak 
 \subsubsection{Flutter}
 \label{subsubsec:opbouwUIFlutter}
 
+Voor de opbouw van de UI maakt Flutter gebruik van widgets. Widgets zijn componenten die beschrijven hoe hun inhoud er uit moet zien. Het zijn objecten met een korte levensduur: telkens er een verandering doorgevoerd wordt aan de data wordt de widget verwijderd en opnieuw opgesteld met de nieuwe data. Door verschillende widgets te gaan nesten wordt een 'widget tree' bekomen, een logische volgorde van widgets die de structuur van de UI vastlegt. 
+
+In figuur \ref{fig:helloWorldFlutter} is de opbouw van een simpele hello world applicatie te zien. Deze bestaat uit twee widgets (Center en Text) die er samen voor zorgen dat de tekst 'Hello world' in het centrum van het scherm getoond wordt. 
+
+Er zijn twee soorten widgets beschikbaar in Flutter: stateless en stateful widgets. Stateless widgets zijn widgets die zelf geen state kunnen bijhouden. Ze kunnen data die ze van hun ouders krijgen wel opslaan om weer te geven maar ze kunnen deze niet wijzigen. Stateful widgets daarentegen kunnen een state object aanmaken en de data hierin lezen en aanpassen. Het state object is echter een object dat afzonderlijk bestaat van de widget. Dit lijkt misschien raar maar komt voort uit de korte levensduur van een widget. Indien het state object een onderdeel zou zijn van de widget gaat de data verloren van zodra de widget opnieuw gebuild moet worden. Door het een apart object te maken blijft het state object bestaan over verschillende builds van de widget heen en kan het informatie onthouden. 
+
+Verder zijn er ook widgets beschikbaar die de native uitstraling van componenten imiteren. Zo is er de klasse van de Material Design widgets die de styling van Android componenten hebben en de klasse van Cupertino widgets die hetzelfde doen voor iOS. Door deze te gaan gebruiken in de applicatie is er geen onderscheid in uitzicht tussen een native applicatie en een applicatie geschreven met Flutter.
 
 
+\begin{figure}
+    \includegraphics[width=0.7\linewidth]{HelloWorldFlutter.png}
+    \caption{Hello world in Flutter. Bron:
+        \textcite{IntroductionToWidgets}}
+    \label{fig:helloWorldFlutter}
+\end{figure}
+
+\subsubsection{Vergelijking opbouw UI}
+\label{subsubsec:vglOpbouwUI}
+
+Een op het eerste zicht opvallend verschil tussen React Native en Flutter is dat de ene gebruikt maakt van React componenten en de andere van widgets. Indien er echter dieper gekeken wordt is het duidelijk dat hoewel de syntax en gebruikswijze ervan anders is het in se hetzelfde concept is. Dit is niet toevallig, de werkwijze van Flutter is namelijk gebaseerd op het idee achter React \autocite{IntroductionToWidgets}. Beiden vertrekken vanuit kleine bouwstenen (bij React Native de componenten en bij Flutter de widgets) die gecomineerd worden met elkaar en op deze manier een volledige UI voorstellen. 
+
+Ook de data flow van beide frameworks is dezelfde: de huidige state vloeit naar beneden naar de componenten/widgets die de weergave van de huidige state verzorgen. De meldingen van aanpassingen gaan omhoog naar de ouder(s) van de huidige component/widget via callback functies.
+
+Indien een React component een geüpdatet state krijgt, dan gaat de component zijn render functie opnieuw aanroepen en wordt de component dus getoond met de weergave van de nieuwe state. Een widget van Flutter werkt op exact dezelfde manier: een güpdatet state objett zorgt ervoor dat de widget zijn eigen build functie opnieuw gaat aanroepen en de nieuwe state wordt weergegeven.
+
+React Native gaat wel op een andere manier om voor het tonen van de UI componenten dan Flutter. Bij React Native wordt een beschrijving gegeven van de UI componenten aan de hand van React Native componenten. Tijdens het compilen van de applicatie worden deze echter omgezet naar hun overeenkomstige native versie. De uiteindelijke UI van de applicatie is dus effectief opgebouwd uit echte native objecten en ziet er helemaal native uit. Een Flutter applicatie blijft echter steeds bestaan uit de widgets die gedefinieerd worden. Voor de verschillende platformen kunnen de gewenste widgets gebruikt worden (Material Design en Cupertino widgets). Om de applicatie dus helemaal native te laten aanvoelen is het noodzakelijk om per platform de juiste widgets te gaan gebruiken. Hoewel de aanpak van beide frameworks op dit vlak dus verschillend is zijn beiden wel in staat om een applicatie af te leveren die een native uitstraling heeft.
 
