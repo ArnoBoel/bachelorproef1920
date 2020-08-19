@@ -215,7 +215,7 @@ Uit de vorige sectie kan afgeleid worden dat er slechts enkele frameworks zijn d
 Elk framework heeft zijn eigen eigenschappen en manier om bepaalde zaken aan te
 pakken. In deze sectie worden de taal die gebruikt wordt binnen de frameworks en
 de verschillende aanpakken op het gebied van navigatie, toegang tot de native
-API's, opbouwen van de UI en de styling besproken.
+API's en opbouwen van de UI besproken.
 
 \subsection{Taal framework}
 \label{subsec:taalFramework}
@@ -624,4 +624,19 @@ Indien een React component een geüpdatet state krijgt, dan gaat de component zi
 React Native gaat wel op een andere manier om voor het tonen van de UI componenten dan Flutter. Bij React Native wordt een beschrijving gegeven van de UI componenten aan de hand van React Native componenten. Tijdens het compilen van de applicatie worden deze echter omgezet naar hun overeenkomstige native versie. De uiteindelijke UI van de applicatie is dus effectief opgebouwd uit echte native objecten en ziet er helemaal native uit. Een Flutter applicatie blijft echter steeds bestaan uit de widgets die gedefinieerd worden. Voor de verschillende platformen kunnen de gewenste widgets gebruikt worden (Material Design en Cupertino widgets). Om de applicatie dus helemaal native te laten aanvoelen is het noodzakelijk om per platform de juiste widgets te gaan gebruiken. Hoewel de aanpak van beide frameworks op dit vlak dus verschillend is zijn beiden wel in staat om een applicatie af te leveren die een native uitstraling heeft.
 
 Het grootste voordeel aan de manier van werken van React is dat indien er een update uitkomt van de stijl van een bepaalde native UI component deze ook direct wordt overgenomen door de component in de React Native app (aangezien dit tijdens het runnen van de app ook effectieve native componenten zijn). In het geval van Flutter moet er gewacht worden tot Google of iemand binnen de community een update van de widget uitbrengt.
+
+\section{Vergelijking prestaties React Native en Flutter}
+\label{sec:vglPrestaties}
+
+Aangezien een keuze tussen twee frameworks niet enkel beïnvloed wordt door de eigenschappen van het framework maar ook door de prestaties van een applicatie geschreven met dit framework worden in deze sectie de prestaties van React Native en Flutter met elkaar vergeleken. Omdat deze studie uiteindelijk slechts twee frameworks over houdt die beiden voldoen aan de gestelde eisen en er reeds studies bestaan die de beide frameworks met elkaar vergeleken hebben op het vlak van prestaties wordt de conclusie van deze studies meegenomen als vergelijking voor de prestaties. 
+
+In de studie van \textcite{Fentaw2020} werden twee apps gemaakt, één met React Native en één met Flutter. In beide gevallen werd de applicatie getest op zowel een Android als op een iOS-toestel. De resultaten van deze studie worden in de volgende paragrafen overlopen, zodanig dat een degelijk begrip van de betekenis van deze resultaten bekomen kan worden.
+
+Bij het testen van de applicaties op het iOS-toestel bleek dat de applicatie die met Flutter geschreven werd een heel stuk beter presteerde op het vlak van CPU-gebruik dan de React Native aplicatie. De verklarig die hiervoor gegeven wordt is dat React Native gebruikt maakt van JavaScript bruggen (softwarematige verbindingen tussen de React Native componenten en de native componenten) waar Flutter rechtstreeks kan communiceren met native modules omdat de bron code wordt omgezet naar native machine code tijdens het compilen. Op het vlak van geheugengebruik scoort de React Native applicatie echter beduidend beter. Hier wordt door de auteur de kanttekening bij geplaatst dat er bij de React Native applicatie gebruik gemaakt werd van Redux, terwijl er bij de Flutter applicatie een eenvoudig Provider package gebruikt werd. Op het vlak van GPU gebruik scoren beide frameworks ongeveer gelijk. Twee van de vier testsituaties waren gelijk, en elk framework was in één testsituatie de betere. 
+
+
+Het testen van de applicaties op een Androidtoestel leverde echter andere resultaten op dan het testen op een iOS-toestel. Bij de CPU test waren beide frameworks nu twee van de vier keer de betere en kon er dus beslist worden dat beide frameworks dezelfde efficiëntie van CPU-gebruik hadden. Ook voor de geheugentest scoorden beide frameworks twee keer als de beste en kan er dus besloten worden dat ze allebei dezelfde efficiënctie hebben op het vlak van geheugengebruik. Als verklaring voor de verschillen in de prestaties in de ene testsituatie vergeleken met de andere wordt gewezen naar het gebruik van de externe libraries voor het uitvoeren van bepaalde functionaliteiten. Ook de taal waarin de applicatie geschreven wordt speelt hier een rol, aangezien bij het filteren van een lijst de React Native meer geheugen verbruikt en hiervoor als verklaring gegeven wordt dat deze functionaliteit in JavaScript langer duurt dan in Dart. Voor het Android toestel kon geen vergelijking van de GPU-prestaties gemaakt worden aangezien de GPU rendering tool van Android toestellen niet compatibel is met Flutter applicaties.
+
+Als algemene conclusie van deze studie wordt gesteld dat beide frameworks aan elkaar gewaagd zijn. Ze hebben elk hun sterke punten waarop ze beter presteren dan het andere framework, maar in het algemeen gezien leveren beide applicaties dezelfde prestaties af. 
+
 
