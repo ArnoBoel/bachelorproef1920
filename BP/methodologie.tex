@@ -126,5 +126,21 @@ In het gevoel voor de gebruiker is er echter geen verschil tussen beide framewor
 
 Er kan besloten worden dat er op het vlak van navigatie geen duidelijk beter framework is. Er is een verschil tussen de manier waarop de ontwikkelaar de navigatie implementeerd, maar voor de gebruiker heeft de navigatie met beide frameworks hetzelfde native gevoel.
 
+\subsection{Toegang native API's}
+\label{subsec:toegangNativeAPIs}
+
+Om een applicatie te kunnen afleveren die alle hardware functionaliteiten van het doelplatform kan gebruiken is het noodzakelijk dat het framework toegang heeft tot de Native API's van het platform. Ook de manier waarop dit gebeurd is van belang, hoe efficiënter dit gebeurd, hoe beter de performantie van de applicatie. Cross-platform frameworks bieden een eigen API aan om met de meest voorkomende eigenschappen te kunnen werken. Op deze manier hoeven de ontwikkelaars geen native code of componenten te kennen om een applicatie te schrijven.
+
+\subsubsection{React Native}
+\label{subsubsec:nativeAPIReactNative}
+
+Zoals voor de meeste functionaliteit van het framework rekent React Native op libraries om specifieke eigenschappen van een platform te kunnen gebruiken. Zo is er bijvoorbeeld de library React Native Camera. Dit is een library die de ontwikkelaar toelaat om de camera van een apparaat te gebruiken, ongeacht het besturingssysteem van het apparaat. Voor de meest voorkomende eigenschappen van apparaten bestaan er dergelijke libraries. De ontwikkelaar hoeft dus geen native code te kennen om toch gebruik te kunnen maken van platform specifieke eigenschappen.
+
+In uitzonderlijke gevallen kan het echter zijn dat de ontwikkelaar een eigenschap van een bepaald apparaat wil gebruiken waarvoor nog geen library beschikbaar is. Een applicatie maken die de eigenschappen van een apparaat niet ten volle gebruikt is uiteraard niet de bedoeling. Om te vermijden dat in dit geval native ontwikkeling van de applicatie beter zou zijn voorziet React Native de mogelijkheid om in deze uitzonderlijke gevallen toch native code te gaan schrijven. Op deze manier kan de ontwikkelaar wel alle eigenschappen gebruiken, zonder dat het hele project in de native taal geschreven moet worden.
+
+\subsubsection{Flutter}
+\label{subsubsec:nativeAPIFlutter}
+
+
 
 
