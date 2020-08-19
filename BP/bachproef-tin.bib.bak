@@ -212,4 +212,19 @@
   url    = {https://flutter.dev/docs/development/ui/widgets-intro},
 }
 
+@Thesis{Fentaw2020,
+  author = {Awel Eshetu Fentaw},
+  date   = {2020-06-29},
+  title  = {Cross platform mobile application development: a comparison study of React Native VsFlutter},
+  url    = {https://jyx.jyu.fi/handle/123456789/70969},
+}
+
+@Thesis{Wu2018,
+  author      = {Wenhao Wu},
+  date        = {2018-03-01},
+  institution = {Metropolia University of Applied Sciences},
+  title       = {React Native vs Flutter, cross-platform mobileapplication frameworks},
+  url         = {https://www.theseus.fi/bitstream/handle/10024/146232/thesis.pdf?sequence=1},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
