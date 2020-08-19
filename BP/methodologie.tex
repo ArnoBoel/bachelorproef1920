@@ -11,12 +11,12 @@
 %% mogelijke manier toegepast hebt om een antwoord te vinden op de
 %% onderzoeksvraag.
 
-In het vorige hoofdstuk werd de eerste deelonderzoeksvraag beantwoord, namelijk wat de voor- en nadelen van een cross-platform framework zijn. In dit hoofstuk wordt er stapgewijs een antwoord gegeven op de deelonderzoeksvragen om zo tot een antwoord te komen op de hoofdonderzoeksvraag van deze studie. Alvorens een vergelijking kan gemaakt worden tussen enkele frameworks en dus de volgende deelonderzoeksvragen beantwoord kunnen worden moet er bepaald worden welke frameworks voldoen aan de eisen die gesteld worden door het team. Deze worden onderverdeeld in functionele en niet-functionele eisen en zijn te vinden in sectie \ref{sec:eisen-framework}. In sectie \ref{sec:selectieFrameworks} worden de populairste cross-platform frameworks op het moment van schrijven van deze studie opgesomd en kort besproken. Vervolgens worden deze in sectie \ref{sec:aftoetsenEisen} afgetoetst tegenover de gestelde eisen. Eens de finale lijst voor de vergelijking is opgesteld worden de geselecteerde frameworks met elkaar vergeleken in sectie \ref{sec:vglEigenschappen}.
+In het vorige hoofdstuk werd de eerste deelonderzoeksvraag beantwoord, namelijk wat de voor- en nadelen van een cross-platform framework zijn. In dit hoofdstuk wordt er stapsgewijs een antwoord gegeven op de deelonderzoeksvragen om zo tot een antwoord te komen op de hoofdonderzoeksvraag van deze studie. Alvorens een vergelijking kan gemaakt worden tussen enkele frameworks en dus de volgende deelonderzoeksvragen beantwoord kunnen worden moet er bepaald worden welke frameworks voldoen aan de eisen die gesteld worden door het team. Deze worden onderverdeeld in functionele en niet-functionele eisen en zijn te vinden in sectie \ref{sec:eisen-framework}. In sectie \ref{sec:selectieFrameworks} worden de populairste cross-platform frameworks op het moment van schrijven van deze studie opgesomd en kort besproken. Vervolgens worden deze in sectie \ref{sec:aftoetsenEisen} afgetoetst tegenover de gestelde eisen. Eens de finale lijst voor de vergelijking is opgesteld worden de geselecteerde frameworks met elkaar vergeleken in sectie \ref{sec:vglEigenschappen}.
 
 \section{Eisen framework}
 \label{sec:eisen-framework}
 
-Om een lijst van frameworks die zinvolzijn om te vergelijken met elkaar moeten de frameworks voldoen aan enkele vooropgestelde eisen. In deze sectie worden deze eisen besproken, met een opslitsing tussen functionele en niet-functionele eisen.
+Om een lijst van frameworks die zinvolzijn om te vergelijken met elkaar moeten de frameworks voldoen aan enkele vooropgestelde eisen. In deze sectie worden deze eisen besproken, met een opsplitsing tussen functionele en niet-functionele eisen.
 
 \subsection{Functionele eisen}
 \label{subsec:functioneleEisen}
@@ -35,7 +35,7 @@ De functionele eisen die gesteld worden aan het framework zijn:
 
 Voor gebruikers van een applicatie is het zeer belangrijk dat de gebruikersinterface van een applicatie overeenkomt met wat ze gewoon zijn van andere applicaties. Dit houdt in dat ze op dezelfde manier moeten kunnen navigeren, knoppen en symbolen moeten er hetzelfde kunnen uitzien, widgets moeten native aanvoelen en ga zo maar door. Dit alles zorgt ervoor dat het gebruiksgemak van de applicatie gevoelig beter wordt. Niet enkel hoe applicaties er uit zien is belangrijk voor gebruikers, ook de performantie ervan is een zeer belangrijk punt. Niemand heeft graag een app die hapert of ellendig lang duurt om te laden. 
 
-Verder is het ook belangrijk dat een app die beschikt over functionaliteit waarvoor geen netwerkconnectie vereist is ook offline gebruikt kan worden. De applicatie moet dus op het apparaat zelf geïnstalleerd kunnen worden en er moet lokale data bijgehouden kunnen worden. Een laatste eis is er één vanuit het oogpunt van de ontwikkelaars: om de gebruikers een native ervaring te kunnen aanbieden heeft de ontwikkelaar toegang nodig tot de native API's. Door deze eis te stellen wordt er verzekerd dat het framework toelaat om alle aanwezige hardwarefunctionaliteiten van een systeem te gaan benutten.
+Verder is het ook belangrijk dat een app die beschikt over functionaliteit waarvoor geen netwerkconnectie vereist is ook offline gebruikt kan worden. De applicatie moet dus op het apparaat zelf geïnstalleerd kunnen worden en er moet lokale data bijgehouden kunnen worden. Een laatste eis is er één vanuit het oogpunt van de ontwikkelaars: om de gebruikers een native ervaring te kunnen aanbieden heeft de ontwikkelaar toegang nodig tot de native API's. Door deze eis te stellen wordt er verzekerd dat het framework toelaat om alle aanwezige hardware functionaliteiten van een systeem te gaan benutten.
 
 \subsection{Niet-functionele eisen}
 \label{subsec:nietFunctioneleEisen}
@@ -101,7 +101,7 @@ Cordova is een framework dat ontwikkeld is door Adobe en bestaat al sinds 2011. 
 \subsubsection{Ionic}
 \label{subsubsec:Ionic}
 
-Ionic is een UI toolkit voor het maken van mobiele webapplicaties. Het is ontwikkeld door Ionic zelf en is een open source project. Ionic bestaat uit drie lagen. De basis is Apache Cordova: het is dus een distributie van Cordova en voegt hier extra eigenschappen aan toe. Bovenop Cordova is er een frontend framework geplaats voor het ontwikkelen van de gebruikersinterface. In de eerste versies van Ionic was dit Angular, maar sinds versie 4 is de gebruiker zelf vrij om te kiezen. Er is ondersteuning aanwezig voor Angular, React, Vue.js en web componenten \autocite{Schiemann2019}. Ionic geeft de ontwikkelaar dus zelf de keuze met welk frontend framework gewerkt wordt. De laatste laag tot slot is het Ionic framework zelf: de visuele weergave van het framework en een set van componenten die het mogelijk maken om op een eenvoudige manier de gebruikersinterface te beschrijven.
+Ionic is een UI toolkit voor het maken van mobiele webapplicaties. Het is ontwikkeld door Ionic zelf en is een open source project. Ionic bestaat uit drie lagen. De basis is Apache Cordova: het is dus een distributie van Cordova en voegt hier extra eigenschappen aan toe. Bovenop Cordova is er een front-end framework geplaats voor het ontwikkelen van de gebruikersinterface. In de eerste versies van Ionic was dit Angular, maar sinds versie 4 is de gebruiker zelf vrij om te kiezen. Er is ondersteuning aanwezig voor Angular, React, Vue.js en web componenten \autocite{Schiemann2019}. Ionic geeft de ontwikkelaar dus zelf de keuze met welk front-end framework gewerkt wordt. De laatste laag tot slot is het Ionic framework zelf: de visuele weergave van het framework en een set van componenten die het mogelijk maken om op een eenvoudige manier de gebruikersinterface te beschrijven.
 
 \subsubsection{Xamarin}
 \label{subsubsec:Xamarin}
@@ -111,7 +111,7 @@ Xamarin is een uitbreiding van het .NET platform van Windows. Het levert een fra
 \subsubsection{Unity}
 \label{subsubsec:Unity}
 
-Unity is een cross-platform framework dat zich richt op het ontwikkelen van games voor mobiele apparaten. Het is uitermate geschikt voor het creëren van 3D content en complexe graphics. 
+Unity is een cross-platform framework dat zich richt op het ontwikkelen van games voor mobiele apparaten. Het is uitermate geschikt voor het creëren van 3D content en complexe grafische voorstellingen. 
 
 \subsubsection{PhoneGap}
 \label{subsubsec:PhoneGap}
@@ -121,7 +121,7 @@ PhoneGap is, net als Ionic, een distributie van Apache Cordova. Het steunt op de
 \subsubsection{NativeScript} 
 \label{subsubsec:NativeScript}
 
-NativeScript is een open source framework voor het bouwen van mobiele applicaties die native aanvoelen. Net als bij Ionic kan er gebruik gemaakt worden van verschillende frontend frameworks (Angular en Vue.js) of de ontwikkelaar kan aan de slag met JavaScript of TypeScript \autocite{NativeScript2020}. Het grootste voordeel van NativeScript is dat het rechtstreekse toegang geeft tot de native API's. De ontwikkelaar moet dus niet wachten tot iemand een brug geschreven heeft om nieuwe eigenschappen te gebruiken. Van zodra nieuwe eigenschappen beschikbaar zijn van een platform kan de ontwikkelaar deze gebruiken. NativeScript is dus geen wrapper rond een WebView, in tegenstelling tot vele andere cross-platform frameworks \autocite{Anderson2016}.
+NativeScript is een open source framework voor het bouwen van mobiele applicaties die native aanvoelen. Net als bij Ionic kan er gebruik gemaakt worden van verschillende front-end frameworks (Angular en Vue.js) of de ontwikkelaar kan aan de slag met JavaScript of TypeScript \autocite{NativeScript2020}. Het grootste voordeel van NativeScript is dat het rechtstreekse toegang geeft tot de native API's. De ontwikkelaar moet dus niet wachten tot iemand een brug geschreven heeft om nieuwe eigenschappen te gebruiken. Van zodra nieuwe eigenschappen beschikbaar zijn van een platform kan de ontwikkelaar deze gebruiken. NativeScript is dus geen wrapper rond een WebView, in tegenstelling tot vele andere cross-platform frameworks \autocite{Anderson2016}.
 
 \subsubsection{Kotlin Multiplatform}
 \label{subsubsec:Kotlin}
@@ -137,7 +137,7 @@ Kivy is een open source grafische gebruikersinterface library die het mogelijk m
 \subsubsection{Corona}
 \label{subsubsec:Corona}
 
-Corona is een cross-platform framework dat ideaal is voor het snelle ontwikkelen van mobiele applicaties en games. Het is gebaseerd op Lua, een open source scripting taal. Er zijn vele plugins beschikbaar en er is toegang tot de native API's indien er geen plugin beschikbaar is voor een bepaalde eigenschap. Het framework beschikt over een simulator die de ontwikkelaar toelaat om aanpassingen direct te kunnen zien \autocite{Coronalabs2020}. Een nadeel is wel dat het bedrijf achter Corona niet meer bestaat sinds 1/5/2020. De software gaat verder als een open source project, maar het toekomstige bestaan en updates zijn dus niet langer gegarandeerd \autocite{Shcherban2020}.
+Corona is een cross-platform framework dat ideaal is voor het snelle ontwikkelen van mobiele applicaties en games. Het is gebaseerd op Lua, een open source scripting taal. Er zijn vele plug-ins beschikbaar en er is toegang tot de native API's indien er geen plug-in beschikbaar is voor een bepaalde eigenschap. Het framework beschikt over een simulator die de ontwikkelaar toelaat om aanpassingen direct te kunnen zien \autocite{Coronalabs2020}. Een nadeel is wel dat het bedrijf achter Corona niet meer bestaat sinds 1/5/2020. De software gaat verder als een open source project, maar het toekomstige bestaan en updates zijn dus niet langer gegarandeerd \autocite{Shcherban2020}.
 
 \subsubsection{.NET MAUI}
 \label{subsubsec:.NETMAUI}
@@ -152,7 +152,7 @@ De populairste cross-platform frameworks van de voorbije twee jaar werden bespro
 \subsection{Functionele eisen}
 \label{subsec:aftoetstenFunctioneleEisen}
 
-De funtionele eisen die gesteld worden aan het framework zijn te vinden in sectie \ref{subsec:functioneleEisen}. Al de hiervoor vooropgestelde frameworks voldoen aan alle functionele eisen die gesteld worden aan het framework. Deze worden dus niet afzonderlijk opgesomd. Om tot een verkleinde lijst van frameworks te komen om te kunnen gaan vergelijken moet er dus gekeken worden naar de niet-functionele eisen.
+De functionele eisen die gesteld worden aan het framework zijn te vinden in sectie \ref{subsec:functioneleEisen}. Al de hiervoor vooropgestelde frameworks voldoen aan alle functionele eisen die gesteld worden aan het framework. Deze worden dus niet afzonderlijk opgesomd. Om tot een verkleinde lijst van frameworks te komen om te kunnen gaan vergelijken moet er dus gekeken worden naar de niet-functionele eisen.
 
 \subsection{Niet-functionele eisen}
 \label{subsec:aftoetsenNietFunctioneleEisen}
@@ -161,7 +161,7 @@ De niet-functionele eisen voor het framework zijn te vinden in sectie \ref{subse
 
 \begin{table}
     \includegraphics[width=\linewidth]{TabelNietFunctioneleEisen.png}
-    \caption{Overzicht aftoetsing niet functionele eisen}
+    \caption{Overzicht aftoetsen niet-functionele eisen}
     \label{tab:nietFunctioneleEisen}
 \end{table}
 
@@ -188,7 +188,7 @@ NativeScript is een framework dat net als Cordova en Ionic moet inboeten aan pop
 \subsubsection{Kotlin}
 \label{subsubsec:KotlinEisen}
 
-Kotlin is een framework dat oorspronkelijk gemaakt is voor het ontwikkelen van Android applicaties. Sinds release 1.3 is er ook de mogelijkheid om cross-platform applicaties te schrijven. Deze functionaliteit is echter nog experimenteel, er is dus nog geen stabiele versie van het framework waar cross-platform ontwikkeling een vast deel van uitmaakt. Voor het ontwikkelen van applicaties voor bedrijven in de komende jaren is het absoluut noodzakelijk dat er gerekend kan worden op een stabiele versie van het framework, zodat alle onderteuning die nodig is ook effectief gegarandeerd kan worden. Kotlin is dus met andere woorden op dit moment geen goede optie, al toont het wel zeer veel potentieel.
+Kotlin is een framework dat oorspronkelijk gemaakt is voor het ontwikkelen van Android applicaties. Sinds release 1.3 is er ook de mogelijkheid om cross-platform applicaties te schrijven. Deze functionaliteit is echter nog experimenteel, er is dus nog geen stabiele versie van het framework waar cross-platform ontwikkeling een vast deel van uitmaakt. Voor het ontwikkelen van applicaties voor bedrijven in de komende jaren is het absoluut noodzakelijk dat er gerekend kan worden op een stabiele versie van het framework, zodat alle ondersteuning die nodig is ook effectief gegarandeerd kan worden. Kotlin is dus met andere woorden op dit moment geen goede optie, al toont het wel zeer veel potentieel.
 
 \subsubsection{Kivy}
 \label{subsubsec:KivyEisen}
@@ -294,7 +294,7 @@ Een laatste sterke eigenschap van Flutter is de 'hot reload' functie. Deze laat
 toe om aanpassingen in de code (zoals updates in de UI, bug fixes of zelfs hele
 nieuwe features) toe te passen op de applicatie zonder deze te moeten stoppen en
 opnieuw builden. Voor zowel het ontwikkelen van de UI als het oplossen van
-problemen is dit een zeer krachtige eigenschap die de ontwikkelingstijd dratisch
+problemen is dit een zeer krachtige eigenschap die de ontwikkelingstijd drastisch
 verlaagd. De werkwijze steunt op het bestaan van de Dart Virtual Machine. Dit is
 een VM waar de Dart code in draait en die er voor zorgt dat de code wordt
 omgezet naar de gewenste taal (machine code of JavaScript). De bron code
@@ -307,11 +307,11 @@ gestopt moest worden.
 \label{subsubse:vglTalen}
 
 Zoals in de vorige secties duidelijk werd steunen de twee frameworks op een
-andere taal. In deze sectie worden de verschillen en gelijkinissen tussen beide
+andere taal. In deze sectie worden de verschillen en gelijkenissen tussen beide
 talen besproken.
 
 Eerst en vooral moet er op gemerkt worden dat beide talen dezelfde achtergrond
-hebben. Ze zijn beide gestart als een taal voor webomgevingen en zijn daarna
+hebben. Ze zijn beide gestart als een taal voor web omgevingen en zijn daarna
 verder geëvolueerd om er meerdere soorten applicaties mee te kunnen schrijven.
 Zo worden ze nu beide gebruikt voor de ontwikkeling van cross-platform
 applicaties. Een groot verschil tussen de twee is echter dat JavaScript reeds
@@ -340,7 +340,7 @@ Een gelijkenis tussen de twee frameworks is de hot reload functionaliteit. Ze
 stellen beiden de ontwikkelaar in staat om aanpassingen zeer snel te kunnen
 weergeven zonder dat de applicatie heropgestart hoeft te worden. Er bestaat wel
 een verschil in aanpak tussen de twee. Bij React Native wordt er gebruikt
-gemaakt van een virtual DOM om de staat van de UI voor en na de de update bij te
+gemaakt van een virtual DOM om de staat van de UI voor en na de update bij te
 houden, zodat enkel de aangepaste componenten opnieuw hoeven gerenderd te
 worden. Bij Flutter wordt er gebruikt gemaakt van een VM, die de aanpassingen
 injecteert in de broncode en deze doorgeeft aan de applicatie, waarna de widget
@@ -435,7 +435,7 @@ volgorde maar wel de volgorde die vastgelegd is door de ontwikkelaar. De aanpak
 berust op een Navigator.pages object. Hieraan kunnen de verschillende pagina's
 toegevoegd worden. Vervolgens zal de Navigator dit Navigator.pages object
 omzetten in een stack van routes. Indien een nieuwe pagina wordt toegevoegd aan
-Navigator.pages dan wordt de stack ook geüpdate. 
+Navigator.pages dan wordt de stack ook geüpdatet. 
 
 \begin{figure}
     \includegraphics[width=\linewidth]{NamedRoutesFlutter.png}
@@ -472,12 +472,12 @@ naar het volgende scherm gegaan kan worden. Indien de gebruiker uit dit scherm
 gaat door de terug knop van het systeem te gebruiken is de waarde die
 teruggegeven wordt null en zal het volgende scherm dus niet getoond worden.
 
-Tot slot geeft de Navigator klasse de ontwikkelaar ook de mogelijkheid om popups
+Tot slot geeft de Navigator klasse de ontwikkelaar ook de mogelijkheid om pop-ups
 te tonen op het scherm. Dit zijn schermen die niet de volledig oppervlakte van
 het scherm in nemen en dus nog een deel van het onderliggende scherm tonen. Het
 onderliggende scherm wordt echter geblokkeerd, de gebruiker kan dus enkel binnen
-de popup input geven. Deze popups gedragen zich verder als een normale route, de
-navigatie naar een popup en er weg van is dus exact hetzelfde.
+de pop-up input geven. Deze pop-ups gedragen zich verder als een normale route, de
+navigatie naar een pop-up en er weg van is dus exact hetzelfde.
 
 \subsubsection{Vergelijking navigatie}
 \label{subsubsec:vglNavigatie}
@@ -505,7 +505,7 @@ wilt geven.
 
 Er kan besloten worden dat er op het vlak van navigatie geen duidelijk beter
 framework is. Er is een verschil tussen de manier waarop de ontwikkelaar de
-navigatie implementeerd, maar voor de gebruiker heeft de navigatie met beide
+navigatie implementeert, maar voor de gebruiker heeft de navigatie met beide
 frameworks hetzelfde native gevoel.
 
 \subsection{Toegang native API's}
@@ -545,27 +545,27 @@ zonder dat het hele project in de native taal geschreven moet worden. De native 
 \label{subsubsec:nativeAPIFlutter}
 
 Flutter maakt voor de toegang tot specifieke eigenschappen van een platform
-gebruik van plugins. Zo is er bijvoorbeeld de camera plugin die de ontwikkelaar
-toelaat om de camera van een apparaat te gebruiken. De plugin bevat onder meer
+gebruik van plug-ins. Zo is er bijvoorbeeld de camera plug-in die de ontwikkelaar
+toelaat om de camera van een apparaat te gebruiken. De plug-in bevat onder meer
 methodes om alle beschikbare camera's van een apparaat op te halen (bij een
 smartphone bijvoorbeeld de camera aan de voorkant en die aan de achterkant), de
 gewenste camera te selecteren en een foto te nemen met deze camera. Voor de
-meest voorkomende eigenschappen bestaan er dergelijke plugins. Ook hier hoeft de
+meest voorkomende eigenschappen bestaan er dergelijke plug-ins. Ook hier hoeft de
 ontwikkelaar dus geen native code te kennen om toch specifieke eigenschappen van
 een platform te kunnen gebruiken.
 
-Indien de ontwikkelaar eigenschappen van een apparaat wil gebruiken waarvoor nog geen plugin bestaat voorziet Flutter de mogelijkheid om toch native code te gaan schrijven en dit te implementeren in de Flutter applicatie. Flutter voorziet klassen die de communicatie tussen platform-specifieke en Flutter code verzorgen. Deze laten toe om native code te schrijven voor een specifieke toepassing.
+Indien de ontwikkelaar eigenschappen van een apparaat wil gebruiken waarvoor nog geen plug-in bestaat voorziet Flutter de mogelijkheid om toch native code te gaan schrijven en dit te implementeren in de Flutter applicatie. Flutter voorziet klassen die de communicatie tussen platform-specifieke en Flutter code verzorgen. Deze laten toe om native code te schrijven voor een specifieke toepassing.
 
 \subsubsection{Vergelijking toegang native API's}
 \label{subsubsec:vglToegangNativeAPIs}
 
-In de vorige secties werd duidelijk dat beide frameworks de gebruiker in staat stellen om toegang te hebben tot de native API's. Bij beiden zijn er voor de meest voorkomende eigenschappen reeds oplossingen voorzien (bij React Native in de vorm van een library, bij Flutter in de vorm van een plugin). Indien er nog geen standaard oplossing voor bestaat om een bepaalde eigenschap te gebruiken laten beide frameworks de ontwikkelaar toe om alsnog native code te gaan schrijven. De ontwikkelaar heeft dus steeds gegarandeerd toegang tot alle eigenschappen van een apparaat. Kennis van de native code is wel nodig in deze omstandigheden bij beide frameworks.
+In de vorige secties werd duidelijk dat beide frameworks de gebruiker in staat stellen om toegang te hebben tot de native API's. Bij beiden zijn er voor de meest voorkomende eigenschappen reeds oplossingen voorzien (bij React Native in de vorm van een library, bij Flutter in de vorm van een plug-in). Indien er nog geen standaard oplossing voor bestaat om een bepaalde eigenschap te gebruiken laten beide frameworks de ontwikkelaar toe om alsnog native code te gaan schrijven. De ontwikkelaar heeft dus steeds gegarandeerd toegang tot alle eigenschappen van een apparaat. Kennis van de native code is wel nodig in deze omstandigheden bij beide frameworks.
 
 
 \subsection{Opbouw UI}
 \label{subsec:opbouwUI}
 
-Het belangrijkste deel van een applicatie voor een gebruiker is de UI. Deze moet er dan ook mooi uitzien, gebruiksvriendelijk zijn en goede prestaties kunnen leveren. Voor een cross-platform framework is het dus uiterst belangrijk om een goeide UI te kunnen bouwen. 
+Het belangrijkste deel van een applicatie voor een gebruiker is de UI. Deze moet er dan ook mooi uitzien, gebruiksvriendelijk zijn en goede prestaties kunnen leveren. Voor een cross-platform framework is het dus uiterst belangrijk om een goede UI te kunnen bouwen. 
 
 De opbouw van de UI van een applicatie gebeurt zowel voor Android als voor iOS aan de hand van views, zoals te zien is in figuur \ref{fig:opbouwUIAndroidiOS}. Door meerdere views samen te combineren wordt een interactieve UI bekomen die de gebruiker in staat stelt de applicatie te gebruiken. In deze sectie wordt gekeken hoe zowel React Native als Flutter het gebruik van deze native views aanpakken en beide methodes worden met elkaar vergeleken.
 
@@ -582,7 +582,7 @@ De opbouw van de UI van een applicatie gebeurt zowel voor Android als voor iOS a
 
 React Native stelt de ontwikkelaar in staat om deze views te gaan aanspreken aan de hand van React componenten. Dit is een eigen voorstelling van de overeenkomstige platform specifieke views, die 'at runtime' gecreëerd worden aan de hand van de React componenten. Het grote voordeel van deze manier van werken is dat de ontwikkelaar niet hoeft te weten hoe een bepaalde view noemt op het specifieke platform, weten hoe de component in React Native noemt is voldoende. 
 
-In figuur \ref{fig:reactComponent} is de opbouw van een eenvoudige React component te zien. Deze component zorgt er voor dat de tekst 'Hello, I am your cat!' op het scherm verschijnt. In het begin van de component worden React en de Text-component van React Native geïmporteerd. Vervolgens wordt er een functiecomponent gemaakt, waarin de Text-component wordt gebruikt. De tekst die getoond moet worden wordt megegeven aan deze component en de component wordt geëxporteerd. Deze component kan nu gebruikt worden om op gelijk welk scherm binnen de applicatie en op eender welk platform de tekst 'Hello, I am your cat!' te tonen.
+In figuur \ref{fig:reactComponent} is de opbouw van een eenvoudige React component te zien. Deze component zorgt er voor dat de tekst 'Hello, I am your cat!' op het scherm verschijnt. In het begin van de component worden React en de Text-component van React Native geïmporteerd. Vervolgens wordt er een functiecomponent gemaakt, waarin de Text-component wordt gebruikt. De tekst die getoond moet worden wordt meegegeven aan deze component en de component wordt geëxporteerd. Deze component kan nu gebruikt worden om op gelijk welk scherm binnen de applicatie en op eender welk platform de tekst 'Hello, I am your cat!' te tonen.
 
 
 React Native beschikt over vele core componenten. Dit zijn componenten die vaak gebruikt worden voor het maken van een applicatie en dus standaard tot React Native behoren. Verder laat React Native echter de ruimte om zelf native componenten te gaan definiëren. Door de community zijn er al vele native componenten geschreven die door een ontwikkelaar vrij gebruikt kunnen worden. Indien er echter toch een bepaalde component is die nog geen overeenkomstige React component heeft kan de ontwikkelaar deze zelf ontwikkelen. Van zodra nieuwe eigenschappen uitkomen voor een bepaald platform kan de ontwikkelaar dus kiezen: ofwel wachten tot iemand van de community een React component schrijft voor deze nieuwe eigenschap of zelf één schrijven. Indien de ontwikkelaar het echt nodig heeft is er dus geen limitatie en kan de nieuwe eigenschap gebruikt worden (weliswaar met de nodige extra inspanning).
@@ -620,7 +620,7 @@ Een op het eerste zicht opvallend verschil tussen React Native en Flutter is dat
 
 Ook de data flow van beide frameworks is dezelfde: de huidige state vloeit naar beneden naar de componenten/widgets die de weergave van de huidige state verzorgen. De meldingen van aanpassingen gaan omhoog naar de ouder(s) van de huidige component/widget via callback functies.
 
-Indien een React component een geüpdatete state krijgt gaat de component zijn render functie opnieuw aanroepen en wordt de component dus getoond met de weergave van de nieuwe state. Een widget van Flutter werkt op exact dezelfde manier: een güpdatet state object zorgt ervoor dat de widget zijn eigen build functie opnieuw gaat aanroepen en de nieuwe state wordt weergegeven.
+Indien een React component een geüpdatete state krijgt gaat de component zijn render functie opnieuw aanroepen en wordt de component dus getoond met de weergave van de nieuwe state. Een widget van Flutter werkt op exact dezelfde manier: een geüpdatet state object zorgt ervoor dat de widget zijn eigen build functie opnieuw gaat aanroepen en de nieuwe state wordt weergegeven.
 
 React Native pakt het tonen van de UI componenten wel op een andere manier aan dan Flutter. Bij React Native wordt een beschrijving gegeven van de UI componenten aan de hand van React Native componenten. Tijdens het compilen van de applicatie worden deze echter omgezet naar hun overeenkomstige native versie. De uiteindelijke UI van de applicatie is dus effectief opgebouwd uit echte native objecten en ziet er helemaal native uit. Een Flutter applicatie blijft echter steeds bestaan uit de widgets die gedefinieerd worden. Voor de verschillende platformen kunnen de gewenste widgets gebruikt worden (Material Design en Cupertino widgets). Om de applicatie dus helemaal native te laten aanvoelen is het noodzakelijk om per platform de juiste widgets te gaan gebruiken. Hoewel de aanpak van beide frameworks op dit vlak dus verschillend is zijn beiden wel in staat om een applicatie af te leveren die een native uitstraling heeft.
 
@@ -629,7 +629,7 @@ Het grootste voordeel aan de manier van werken van React is dat indien er een up
 \subsection{Ondersteuning andere platformen}
 \label{subsec:ondersteuningAnderePlatformen}
 
-Deze studie heeft zich tot op dit moment enkel gefocust op de ontwikkeling van applicaties voor Android en iOS. Aangezien in de B2B markt ook windows nog steeds aanwezig is en ook de ontwikkeling van desktop applicaties eventueel wel een handige eigenschap kan zijn voor een framework wordt ook op dit punt een vergelijking tussen beide frameworks gemaakt.
+Deze studie heeft zich tot op dit moment enkel gefocust op de ontwikkeling van applicaties voor Android en iOS. Aangezien in de B2B markt ook Windows nog steeds aanwezig is en ook de ontwikkeling van desktop applicaties eventueel wel een handige eigenschap kan zijn voor een framework wordt ook op dit punt een vergelijking tussen beide frameworks gemaakt.
 
 \subsubsection{React Native}
 
@@ -637,11 +637,11 @@ Hoewel het hoofddoel van React Native is om applicaties te kunnen ontwikkelen vo
 
 \subsubsection{Flutter}
 
-Op het moment van schrijven van deze studie is enkel de ontwikkeling voor Android en iOS beschikbaar in de stabiele versie van Flutter. Flutter gebruiken om een webomgeving te maken zit in de beta test fase. Ook de ondersteuning voor desktop wordt aan gewerkt, met de ondersteuning van iOS in alpha. De ondersteuning voor Linux en Windows zit op het moment van schrijven nog in de ontwikkelingsfase \autocite{FlutterPlatformSupport}.
+Op het moment van schrijven van deze studie is enkel de ontwikkeling voor Android en iOS beschikbaar in de stabiele versie van Flutter. Flutter gebruiken om een web omgeving te maken zit in de bèta test fase. Ook de ondersteuning voor desktop wordt aan gewerkt, met de ondersteuning van iOS in alpha. De ondersteuning voor Linux en Windows zit op het moment van schrijven nog in de ontwikkelingsfase \autocite{FlutterPlatformSupport}.
 
 \subsubsection{Vergelijking ondersteuning andere platformen}
 
-Voor zowel React Native als Flutter ligt de focus op het ontwikkelen van applicaties voor Android en iOS. Bij React Native zijn er echter reeds enkele projecten beschikbaar die de ondersteunde platformen gevoelig uitbreiden. Zo kan ee React Native applicatie ook gedeployed worden op Windows (elk apparaat dat draait op Windows 10), MacOS en Linux. Ook het deployen als een webapplicatie is mogelijk. Flutter wil op dit gebied niet achterblijven en is hard aan het werken aan de uitbreiding van de ondersteunde platformen. Op dit moment is er echter nog geen versie beschikbaar die deze uitgebreide ondersteuning aanbiedt. React Native heeft op dit vlak dus een voordeel ten opzichte van Flutter. Dit voordeel is voor een deel te verklaren door het feit dat React Native al langer bestaat en de community dus al meer tijd gehad heeft om extra functionaliteit toe te voegen aan het framework.
+Voor zowel React Native als Flutter ligt de focus op het ontwikkelen van applicaties voor Android en iOS. Bij React Native zijn er echter reeds enkele projecten beschikbaar die de ondersteunde platformen gevoelig uitbreiden. Zo kan een React Native applicatie ook gedeployed worden op Windows (elk apparaat dat draait op Windows 10), MacOS en Linux. Ook het deployen als een webapplicatie is mogelijk. Flutter wil op dit gebied niet achterblijven en is hard aan het werken aan de uitbreiding van de ondersteunde platformen. Op dit moment is er echter nog geen versie beschikbaar die deze uitgebreide ondersteuning aanbiedt. React Native heeft op dit vlak dus een voordeel ten opzichte van Flutter. Dit voordeel is voor een deel te verklaren door het feit dat React Native al langer bestaat en de community dus al meer tijd gehad heeft om extra functionaliteit toe te voegen aan het framework.
 
 \section{Vergelijking prestaties React Native en Flutter}
 \label{sec:vglPrestaties}
@@ -650,7 +650,7 @@ Aangezien een keuze tussen twee frameworks niet enkel beïnvloed wordt door de e
 
 In de studie van \textcite{Fentaw2020} werden twee apps gemaakt, één met React Native en één met Flutter. In beide gevallen werd de applicatie getest op zowel een Android als op een iOS-toestel. De resultaten van deze studie worden in de volgende paragrafen overlopen, zodanig dat een degelijk begrip van de betekenis van deze resultaten bekomen kan worden.
 
-Bij het testen van de applicaties op het iOS-toestel bleek dat de applicatie die met Flutter geschreven werd een heel stuk beter presteerde op het vlak van CPU-gebruik dan de React Native aplicatie. De verklarig die hiervoor gegeven wordt is dat React Native gebruikt maakt van JavaScript bruggen (softwarematige verbindingen tussen de React Native componenten en de native componenten) waar Flutter rechtstreeks kan communiceren met native modules omdat de bron code wordt omgezet naar native machine code tijdens het compilen. Op het vlak van geheugengebruik scoort de React Native applicatie echter beduidend beter. Hier wordt door de auteur de kanttekening bij geplaatst dat er bij de React Native applicatie gebruik gemaakt werd van Redux, terwijl er bij de Flutter applicatie een eenvoudig Provider package gebruikt werd. Op het vlak van GPU gebruik scoren beide frameworks ongeveer gelijk. Twee van de vier testsituaties waren gelijk, en elk framework was in één testsituatie de betere. 
+Bij het testen van de applicaties op het iOS-toestel bleek dat de applicatie die met Flutter geschreven werd een heel stuk beter presteerde op het vlak van CPU-gebruik dan de React Native applicatie. De verklaring die hiervoor gegeven wordt is dat React Native gebruikt maakt van JavaScript bruggen (softwarematige verbindingen tussen de React Native componenten en de native componenten) waar Flutter rechtstreeks kan communiceren met native modules omdat de bron code wordt omgezet naar native machine code tijdens het compilen. Op het vlak van geheugengebruik scoort de React Native applicatie echter beduidend beter. Hier wordt door de auteur de kanttekening bij geplaatst dat er bij de React Native applicatie gebruik gemaakt werd van Redux, terwijl er bij de Flutter applicatie een eenvoudig Provider package gebruikt werd. Op het vlak van GPU gebruik scoren beide frameworks ongeveer gelijk. Twee van de vier testsituaties waren gelijk, en elk framework was in één testsituatie de betere. 
 
 
 Het testen van de applicaties op een Androidtoestel leverde echter andere resultaten op dan het testen op een iOS-toestel. Bij de CPU test waren beide frameworks nu twee van de vier keer de betere en kon er dus beslist worden dat beide frameworks dezelfde efficiëntie van CPU-gebruik hadden. Ook voor de geheugentest scoorden beide frameworks twee keer als de beste en kan er dus besloten worden dat ze allebei dezelfde efficiënctie hebben op het vlak van geheugengebruik. Als verklaring voor de verschillen in de prestaties in de ene testsituatie vergeleken met de andere wordt gewezen naar het gebruik van de externe libraries voor het uitvoeren van bepaalde functionaliteiten. Ook de taal waarin de applicatie geschreven wordt speelt hier een rol, aangezien bij het filteren van een lijst de React Native meer geheugen verbruikt en hiervoor als verklaring gegeven wordt dat deze functionaliteit in JavaScript langer duurt dan in Dart. Voor het Android toestel kon geen vergelijking van de GPU-prestaties gemaakt worden aangezien de GPU rendering tool van Android toestellen niet compatibel is met Flutter applicaties.
